@@ -1,0 +1,147 @@
+// 字體 --------------------------------------
+$font-family: "Mulish", sans-serif, Arial, "Microsoft JhengHei", "Helvetica Neue", Helvetica;
+
+// google font字體引入 字體為：Mulish
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    font-family: $font-family;
+}
+
+// 色彩 --------------------------------------
+
+// 主色
+$primary-default: #141414;
+$primary-dark: #444444;
+$primary-tint: #CCCCCC;
+
+// 輔助色
+$secondary-default: #264480;
+$secondary-tint: #CBD0D8;
+
+// 強調色
+$accent-default: #D3AC2B;
+$accent-tint: #F4F3EA;
+
+
+// 灰階色彩（運用在各種色塊、分隔線） --------------------------------------
+$black-100: #000000;
+$black-90: #1A1A1A;
+$black-80: #333333;
+$black-70: #4D4D4D;
+$black-60: #666666;
+$black-50: #808080;
+$black-40: #999999;
+$black-30: #B3B3B3;
+$black-20: #E6E6E6;
+$black-10: #E6E6E6;
+$black-5: #F7F7F7;
+$black-white: #FFFFFF;
+
+
+// 文字色彩 --------------------------------------
+$text-color-1: #141414;
+$text-color-2: #404040;
+$text-color-3: #808080;
+$text-color-4: #B8B8B8;
+$text-color-5: #FFFFFF;
+
+
+// 中文字級 --------------------------------------
+.h1 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 125%;
+}
+
+.h2 {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 125%;
+}
+
+.h3 {
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 125%;
+}
+
+.h4 {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 160%;
+}
+
+.h5 {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 160%;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 160%;
+}
+
+.subtitle {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 160%;
+}
+
+.body-type-1 {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 160%;
+}
+
+.body-type-2 {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 160%;
+}
+
+.remark {
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 140%;
+}
+
+.small {
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 140%;
+}
+
+
+// 英文字級 --------------------------------------
+.en-type-1 {
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 110%;
+}
+
+.en-type-2 {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 110%;
+}
+
+.en-type-3 {
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 110%;
+}
+
+.en-type-4 {
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 110%;
+}
+
+.en-type-5 {
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 110%;
+}
