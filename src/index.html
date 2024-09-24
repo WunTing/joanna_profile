@@ -122,7 +122,7 @@
             </div>
 
             <!-- 首頁內容 -->
-            <div class="container">
+            <div id="no-scroll" class="container no-scroll ">
 
                 <!-- Welcome to my profile 裝飾文字 -->
                 <div class="decorate-font-left-straight en-type-5 en-mobile-type-4 ">
@@ -368,13 +368,12 @@
         $(".header .ham-menu-btn").click(function (e) {
             $(this).parents(".header").find(".header-list-mobile").toggleClass("active");
             $(".header-list-mobile").fadeIn("fast");
-            document.body.classList.add('no-scroll');//選單打開時，body禁止滾動
-            // e.stopPropagation();
+            document.body.finds('#no-scroll').classList.add('no-scroll');//選單打開時，body禁止滾動
         });
         //M版漢堡按鈕，點擊關閉按鈕，關閉選單
         $(".header-list-mobile .close-btn").click(function (e) {
             $(this).parent(".header-list-mobile").hide();
-            document.body.classList.remove('no-scroll');//選單關閉時，body禁止滾動
+            document.body.finds('#no-scroll').classList.remove('no-scroll');//選單打開時，body禁止滾動
         });
     </script>
 </body>
