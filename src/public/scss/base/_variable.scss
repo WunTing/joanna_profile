@@ -1,0 +1,307 @@
+//基礎設定
+
+// 字體 --------------------------------------
+$font-family: "Mulish", sans-serif, Arial, "Microsoft JhengHei", "Helvetica Neue", Helvetica;
+
+// google font字體引入 字體為：Mulish
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    font-family: $font-family;
+}
+
+// 文字邊距離（預設調整） --------------------------------------
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0px;
+}
+
+
+// 文字樣式（預設調整） --------------------------------------
+address {
+    font-style: normal;
+}
+
+
+// 按鈕樣式（預設調整） --------------------------------------
+button {
+    background-color: transparent;
+    border: 0;
+}
+
+
+// 排版最大容器 --------------------------------------
+.container {
+    max-width: 1200px;
+    padding: 0;
+    margin: auto;
+}
+
+@media screen and (max-width: 1199px) {
+    .container {
+        max-width: 100%;
+        padding: 0 24px;
+    }
+}
+
+
+// 圓角 --------------------------------------
+$border-radius: 25px;
+
+
+// 色彩 --------------------------------------
+
+// 主色
+$primary-default: #141414;
+$primary-dark: #444444;
+$primary-tint: #CCCCCC;
+
+// 輔助色
+$secondary-default: #264480;
+$secondary-tint: #CBD0D8;
+
+// 強調色
+$accent-default: #D3AC2B;
+$accent-tint: #F4F3EA;
+
+
+// 灰階色彩（運用在各種色塊、分隔線） --------------------------------------
+$black-100: #000000;
+$black-90: #1A1A1A;
+$black-80: #333333;
+$black-70: #4D4D4D;
+$black-60: #666666;
+$black-50: #808080;
+$black-40: #999999;
+$black-30: #B3B3B3;
+$black-20: #E6E6E6;
+$black-10: #E6E6E6;
+$black-5: #F7F7F7;
+$black-white: #FFFFFF;
+
+
+// 文字色彩 --------------------------------------
+$text-color-1: #141414;
+$text-color-2: #404040;
+$text-color-3: #808080;
+$text-color-4: #B8B8B8;
+$text-color-5: #FFFFFF;
+
+
+// 陰影 --------------------------------------
+$box-shadow-s: 0px 2px 8px rgba($color: #000000, $alpha: 0.4);
+
+
+// 文字對齊方式 --------------------------------------
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+
+// 中文字級 桌機 --------------------------------------
+.tit-type-1 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 125%;
+}
+
+.tit-type-2 {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 125%;
+}
+
+.tit-type-3 {
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 125%;
+}
+
+.tit-type-4 {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 160%;
+}
+
+.tit-type-5 {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 160%;
+}
+
+.tit-type-6 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 160%;
+}
+
+.subtitle {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 160%;
+}
+
+.body-type-1 {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 160%;
+}
+
+.body-type-2 {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 160%;
+}
+
+.remark {
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 140%;
+}
+
+.small {
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 140%;
+}
+
+
+// 按鈕字級 --------------------------------------
+.btn-lg {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 160%;
+}
+
+.btn-md {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 140%;
+}
+
+.btn-sm {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 120%;
+}
+
+
+// 英文字級 --------------------------------------
+.en-type-1 {
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 110%;
+}
+
+.en-type-2 {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 110%;
+}
+
+.en-type-3 {
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 110%;
+}
+
+.en-type-4 {
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 110%;
+}
+
+.en-type-5 {
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 110%;
+}
+
+
+@media screen and (max-width: 767px) {
+
+    // 中文字級 手機 --------------------------------------
+    .tit-mobile-type-1 {
+        font-size: 26px;
+        font-weight: bold;
+        line-height: 125%;
+    }
+
+    .tit-mobile-type-2 {
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 160%;
+    }
+
+    .tit-mobile-type-3 {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 160%;
+    }
+
+    .subtitle-mobile-type-1 {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 160%;
+    }
+
+    .subtitle-mobile-type-2 {
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 160%;
+    }
+
+    .body-mobile-type-1 {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 160%;
+    }
+
+    .body-mobile-type-2 {
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 160%;
+    }
+
+    // 按鈕字級 --------------------------------------
+    .btn-lg {
+        font-size: 14px;
+        line-height: 140%;
+    }
+
+    // 英文字級 手機 --------------------------------------
+    .en-mobile-type-1 {
+        font-size: 40px;
+        font-weight: 900;
+        line-height: 110%;
+    }
+
+    .en-mobile-type-2 {
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 110%;
+    }
+
+    .en-mobile-type-3 {
+        font-size: 26px;
+        font-weight: 900;
+        line-height: 110%;
+    }
+
+    .en-mobile-type-4 {
+        font-size: 11px;
+        font-weight: normal;
+        line-height: 110%;
+    }
+}
