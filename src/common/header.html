@@ -131,11 +131,13 @@
         $(".header .ham-menu-btn").click(function (e) {
             $(this).parents(".header").find(".header-list-mobile").toggleClass("active");
             $(".header-list-mobile").fadeIn("fast");
+            document.body.classList.add('no-scroll');//選單打開時，body禁止滾動
             // e.stopPropagation();
         });
         //M版漢堡按鈕，點擊關閉按鈕，關閉選單
         $(".header-list-mobile .close-btn").click(function (e) {
             $(this).parent(".header-list-mobile").hide();
+            document.body.classList.remove('no-scroll');//選單關閉時，body禁止滾動
         });
     </script>
 </body>
