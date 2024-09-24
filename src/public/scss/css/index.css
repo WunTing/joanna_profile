@@ -533,6 +533,7 @@ body.no-scroll {
 
 .index-project-card {
   margin-bottom: 80px;
+  line-height: 0;
 }
 .index-project-card .card-banner {
   width: calc(100% - 40px);
