@@ -77,8 +77,6 @@
     .index {
         .index-background {
             background: url("../images/index/background-image-mobile-767.png") top center no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
 
             // 開場文字
             .opening-font {
@@ -100,8 +98,6 @@
 @media screen and (max-width: 576px) {
     .index-background {
         background: url("../images/index/background-image-mobile-576.png") top center no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
     }
 
     // 卡片
