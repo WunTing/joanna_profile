@@ -363,3 +363,6 @@ button {
     display: block;
   }
 }
+body.no-scroll {
+  overflow: hidden;
+}

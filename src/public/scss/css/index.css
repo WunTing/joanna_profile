@@ -447,6 +447,10 @@ button {
     display: block;
   }
 }
+body.no-scroll {
+  overflow: hidden;
+}
+
 .decorate-font-left-straight.en-type-5.en-mobile-type-4 {
   transform: rotate(90deg);
   transform-origin: 0 24px;
