@@ -1,0 +1,175 @@
+//header
+
+// M版漢堡按鈕隱藏、M版header選單隱藏
+.ham-menu-btn,
+.header-list-mobile {
+    display: none;
+}
+
+// PC版header
+.header {
+    width: 100%;
+    height: 60px;
+    background-color: $primary-default;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    .header-inner {
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header-logo {
+        .header-logo-img {
+            height: 34px;
+        }
+    }
+}
+
+// 修復header position: fixed高度塌陷
+.header-height-fix {
+    margin-top: 60px;
+}
+
+// PC版header選單 第一層
+.header-list {
+    margin: 0;
+    list-style-type: none;
+
+    .list-item {
+        float: left;
+        margin-left: 60px;
+        position: relative;
+
+        >a.button {
+            padding: 20px 8px;
+            text-decoration: none;
+            color: $text-color-5;
+
+            .btn-lg {
+                padding: 20px 8px;
+            }
+        }
+
+        &:hover>a.button {
+            padding: 6px 8px;
+            border-radius: 25px;
+            background-color: $black-white;
+            color: $text-color-1;
+        }
+    }
+}
+
+// PC版header選單 第二層
+.item-one .header-dropdown-menu {
+    background-color: $black-white;
+    min-width: 260px;
+    padding: 20px;
+    border-radius: 0 0 25px 25px;
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    top: 43px;
+    z-index: 1;
+    box-shadow: $box-shadow-s;
+
+    li {
+        padding: 8px 12px;
+    }
+
+    a {
+        text-decoration: none;
+        color: $text-color-1;
+        display: block;
+
+        &:hover {
+            color: $secondary-default;
+        }
+    }
+}
+
+.item-one:hover .header-dropdown-menu {
+    display: block;
+}
+
+@media screen and (max-width: 767px) {
+
+    // 修復header position: fixed高度塌陷
+    .header-height-fix {
+        margin-top: 56px;
+    }
+
+    // PC版隱藏
+    .header-list {
+        display: none;
+    }
+
+    // M版漢堡按鈕
+    .ham-menu-btn {
+        display: block;
+    }
+
+    // M版header
+    .header {
+        height: 56px;
+
+        .header-inner {
+            height: 56px;
+        }
+
+        .header-logo {
+            .header-logo-img {
+                height: 26px;
+            }
+        }
+    }
+
+    // M版header選單
+    .header-list-mobile {
+        display: none;
+        width: 100%;
+        height: 100vh;
+        background-color: $black-white;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+
+        .close-btn {
+            padding: 24px 24px 0px 24px;
+            display: block;
+            width: 100%;
+            text-align: right;
+        }
+
+        .header-dropdown-menu-mobile {
+            list-style-type: none;
+            margin: 0;
+            padding: 0px 20px 20px 20px;
+
+            li {
+                padding: 8px 12px;
+            }
+
+            a {
+                text-decoration: none;
+                color: $text-color-1;
+                display: block;
+
+                &:focus {
+                    color: $secondary-default;
+                }
+            }
+        }
+
+        // M版header選單 有active時打開
+        &.active {
+            display: block;
+        }
+    }
+
+}

@@ -1,0 +1,196 @@
+// 圖文排版
+
+.content-info {
+    .info {
+        padding-bottom: 88px;
+
+        // 有段落，外層包info-item
+        .info-item {
+
+            .info-text,
+            .info-list {
+                margin: 0 0 24px 0;
+            }
+
+            .info-tit,
+            .info-subtit {
+                margin: 0 0 4px 0;
+            }
+
+            // 灰色卡片標題
+            .info-card .info-tit {
+                margin: 0 0 16px 0;
+            }
+
+            // 左右排版(用在灰色卡片)
+            &.flex {
+                display: flex;
+                gap: 16px;
+            }
+        }
+
+        .info-tit,
+        .info-subtit {
+            margin: 24px 0px;
+        }
+
+        // 一般內文字
+        .info-text {
+            margin: 0 0 24px 0px;
+        }
+
+        // ul li條列式
+        .info-list {
+            list-style-type: decimal;
+            padding-left: 1em;
+            margin: 0;
+
+            .list {
+                margin: 0 0 24px 0;
+            }
+
+            .list::marker {
+                font-weight: bold;
+            }
+        }
+
+        // 灰色卡片
+        .info-card {
+            flex: 1;
+            margin-bottom: 16px;
+
+            .card {
+                padding: 16px 24px;
+                min-height: 100px;
+                background-color: $black-5;
+                margin: 0;
+            }
+        }
+
+        // 圖片
+        .info-img-block {
+            margin-bottom: 24px;
+
+            // 一張圖
+            .info-img {
+                width: 100%;
+                object-fit: cover;
+            }
+
+            // 兩張圖
+            &.two {
+                display: flex;
+                justify-content: space-between;
+
+                .info-img {
+                    width: calc(50% - 8px);
+                }
+            }
+
+            // 圖片高度600
+            .h-600 {
+                height: 600px;
+            }
+
+            // 圖片高度300
+            .h-300 {
+                height: 300px;
+            }
+
+            // 圖片高度200
+            .h-200 {
+                height: 200px;
+            }
+        }
+
+        // 小標
+        .remark {
+            color: $text-color-3;
+            margin: 24px 0 0 0;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .content-info {
+        .info {
+
+            // 圖片
+            .info-img-block {
+                margin-bottom: 16px;
+
+                // 兩張圖
+                &.two {
+                    flex-direction: column;
+                    gap: 16px;
+
+                    .info-img {
+                        width: 100%;
+                    }
+                }
+
+                // 圖片高度600、300、200
+                .h-600,
+                .h-300,
+                .h-200 {
+                    // min-height: 166px;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .content-info {
+        .info {
+            padding-bottom: 48px;
+
+            // 有段落，外層包info-item
+            .info-item {
+
+                .info-text,
+                .info-list {
+                    margin: 0 0 16px 0;
+                }
+
+                // 灰色卡片標題
+                .info-card .info-tit {
+                    margin: 0 0 8px 0;
+                }
+
+                // 左右排版(用在灰色卡片)
+                &.flex {
+                    flex-direction: column;
+                    gap: 0px;
+                }
+            }
+
+            // 一般內文字
+            .info-text {
+                margin: 0 0 8px 0px;
+            }
+
+            // ul li條列式
+            .info-list {
+                .list {
+                    margin: 0 0 8px 0;
+                }
+            }
+
+            // 灰色卡片
+            .info-card {
+                .card {
+                    padding: 16px 16px;
+                    min-height: auto;
+                }
+            }
+
+            // 小標
+            .remark {
+                color: $text-color-3;
+                margin: 8px 0 0 0;
+            }
+        }
+    }
+}

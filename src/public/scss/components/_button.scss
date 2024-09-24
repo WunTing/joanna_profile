@@ -1,0 +1,111 @@
+//按鈕
+
+// 以下共用區---------------------------------------------
+
+// default按鈕基礎共用
+.btn-base {
+    background-color: $primary-default;
+    border-radius: $border-radius;
+    color: $text-color-5;
+    cursor: pointer;
+}
+
+
+// :hove、:focus 效果共用
+.btn-state-base {
+    &:active {
+        background-color: $primary-dark;
+    }
+
+    &:hover {
+        background-color: $primary-dark;
+    }
+
+    &:focus {
+        outline: 4px solid rgba(0, 0, 0, 0.2);
+    }
+}
+
+// disable效果共用
+.btn-disable-base {
+    background-color: $primary-tint;
+    cursor: not-allowed;
+}
+
+// 以下按鈕個別設定---------------------------------------------
+
+// lg按鈕
+.btn-default-lg {
+    @extend .btn-base;
+    @extend .btn-state-base;
+    padding: 9px 24px;
+
+    // disable狀態
+    &.disable {
+        @extend .btn-disable-base;
+    }
+}
+
+
+// md按鈕
+.btn-default-md {
+    @extend .btn-base;
+    @extend .btn-state-base;
+    padding: 8px 16px;
+
+    // disable狀態
+    &.disable {
+        @extend .btn-disable-base;
+    }
+}
+
+
+// sm按鈕
+.btn-default-sm {
+    @extend .btn-base;
+    @extend .btn-state-base;
+    padding: 8px 12px;
+
+    // disable狀態
+    &.disable {
+        @extend .btn-disable-base;
+    }
+}
+
+
+// icon樣式共用
+.btn-default-lg,
+.btn-default-md,
+.btn-default-sm {
+    .btn-lg {
+        display: flex;
+        justify-content: space-between;
+
+        .icon {
+            width: 24px;
+            height: 24px;
+            padding-left: 4px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    // lg按鈕
+    .btn-default-lg {
+        padding: 8px 16px;
+    }
+
+    // icon樣式共用
+    .btn-default-lg,
+    .btn-default-md,
+    .btn-default-sm {
+        .btn-lg {
+            .icon {
+                width: 20px;
+                height: 20px;
+                padding-left: 0px;
+            }
+        }
+    }
+}
