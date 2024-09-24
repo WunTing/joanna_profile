@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  font-family: "Mulish", sans-serif, Arial, "Microsoft JhengHei", "Helvetica Neue", Helvetica;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0px;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0;
+  margin: auto;
+}
+
+@media screen and (max-width: 1199px) {
+  .container {
+    max-width: 100%;
+    padding: 0 24px;
+  }
+}
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.tit-type-1 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 125%;
+}
+
+.tit-type-2 {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 125%;
+}
+
+.tit-type-3 {
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 125%;
+}
+
+.tit-type-4 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 160%;
+}
+
+.tit-type-5 {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 160%;
+}
+
+.tit-type-6 {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 160%;
+}
+
+.subtitle {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 160%;
+}
+
+.body-type-1 {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 160%;
+}
+
+.body-type-2 {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 160%;
+}
+
+.remark {
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 140%;
+}
+
+.small {
+  font-size: 11px;
+  font-weight: normal;
+  line-height: 140%;
+}
+
+.btn-lg {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 160%;
+}
+
+.btn-md {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 140%;
+}
+
+.btn-sm {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 120%;
+}
+
+.en-type-1 {
+  font-size: 100px;
+  font-weight: 900;
+  line-height: 110%;
+}
+
+.en-type-2 {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 110%;
+}
+
+.en-type-3 {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 110%;
+}
+
+.en-type-4 {
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 110%;
+}
+
+.en-type-5 {
+  font-size: 11px;
+  font-weight: normal;
+  line-height: 110%;
+}
+
+@media screen and (max-width: 767px) {
+  .tit-mobile-type-1 {
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 125%;
+  }
+  .tit-mobile-type-2 {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 160%;
+  }
+  .tit-mobile-type-3 {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 160%;
+  }
+  .subtitle-mobile-type-1 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 160%;
+  }
+  .subtitle-mobile-type-2 {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 160%;
+  }
+  .body-mobile-type-1 {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 160%;
+  }
+  .body-mobile-type-2 {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 160%;
+  }
+  .btn-lg {
+    font-size: 14px;
+    line-height: 140%;
+  }
+  .en-mobile-type-1 {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 110%;
+  }
+  .en-mobile-type-2 {
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 110%;
+  }
+  .en-mobile-type-3 {
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 110%;
+  }
+  .en-mobile-type-4 {
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 110%;
+  }
+}
+.divider-line {
+  padding: 24px 0px;
+}
+.divider-line .line {
+  height: 1px;
+  background-color: #E6E6E6;
+}
+
+.ham-menu-btn,
+.header-list-mobile {
+  display: none;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: #141414;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.header .header-inner {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .header-logo .header-logo-img {
+  height: 34px;
+}
+
+.header-height-fix {
+  margin-top: 60px;
+}
+
+.header-list {
+  margin: 0;
+  list-style-type: none;
+}
+.header-list .list-item {
+  float: left;
+  margin-left: 60px;
+  position: relative;
+}
+.header-list .list-item > a.button {
+  padding: 20px 8px;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.header-list .list-item > a.button .btn-lg {
+  padding: 20px 8px;
+}
+.header-list .list-item:hover > a.button {
+  padding: 6px 8px;
+  border-radius: 25px;
+  background-color: #FFFFFF;
+  color: #141414;
+}
+
+.item-one .header-dropdown-menu {
+  background-color: #FFFFFF;
+  min-width: 260px;
+  padding: 20px;
+  border-radius: 0 0 25px 25px;
+  display: none;
+  list-style-type: none;
+  position: absolute;
+  top: 43px;
+  z-index: 1;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
+}
+.item-one .header-dropdown-menu li {
+  padding: 8px 12px;
+}
+.item-one .header-dropdown-menu a {
+  text-decoration: none;
+  color: #141414;
+  display: block;
+}
+.item-one .header-dropdown-menu a:hover {
+  color: #264480;
+}
+
+.item-one:hover .header-dropdown-menu {
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .header-height-fix {
+    margin-top: 56px;
+  }
+  .header-list {
+    display: none;
+  }
+  .ham-menu-btn {
+    display: block;
+  }
+  .header {
+    height: 56px;
+  }
+  .header .header-inner {
+    height: 56px;
+  }
+  .header .header-logo .header-logo-img {
+    height: 26px;
+  }
+  .header-list-mobile {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+  }
+  .header-list-mobile .close-btn {
+    padding: 24px 24px 0px 24px;
+    display: block;
+    width: 100%;
+    text-align: right;
+  }
+  .header-list-mobile .header-dropdown-menu-mobile {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px 20px 20px 20px;
+  }
+  .header-list-mobile .header-dropdown-menu-mobile li {
+    padding: 8px 12px;
+  }
+  .header-list-mobile .header-dropdown-menu-mobile a {
+    text-decoration: none;
+    color: #141414;
+    display: block;
+  }
+  .header-list-mobile .header-dropdown-menu-mobile a:focus {
+    color: #264480;
+  }
+  .header-list-mobile.active {
+    display: block;
+  }
+}

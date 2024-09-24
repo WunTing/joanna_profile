@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  font-family: "Mulish", sans-serif, Arial, "Microsoft JhengHei", "Helvetica Neue", Helvetica;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0px;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0;
+  margin: auto;
+}
+
+@media screen and (max-width: 1199px) {
+  .container {
+    max-width: 100%;
+    padding: 0 24px;
+  }
+}
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.tit-type-1 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 125%;
+}
+
+.tit-type-2 {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 125%;
+}
+
+.tit-type-3 {
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 125%;
+}
+
+.tit-type-4 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 160%;
+}
+
+.tit-type-5 {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 160%;
+}
+
+.tit-type-6 {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 160%;
+}
+
+.subtitle {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 160%;
+}
+
+.body-type-1 {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 160%;
+}
+
+.body-type-2 {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 160%;
+}
+
+.remark {
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 140%;
+}
+
+.small {
+  font-size: 11px;
+  font-weight: normal;
+  line-height: 140%;
+}
+
+.btn-lg {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 160%;
+}
+
+.btn-md {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 140%;
+}
+
+.btn-sm {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 120%;
+}
+
+.en-type-1 {
+  font-size: 100px;
+  font-weight: 900;
+  line-height: 110%;
+}
+
+.en-type-2 {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 110%;
+}
+
+.en-type-3 {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 110%;
+}
+
+.en-type-4 {
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 110%;
+}
+
+.en-type-5 {
+  font-size: 11px;
+  font-weight: normal;
+  line-height: 110%;
+}
+
+@media screen and (max-width: 767px) {
+  .tit-mobile-type-1 {
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 125%;
+  }
+  .tit-mobile-type-2 {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 160%;
+  }
+  .tit-mobile-type-3 {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 160%;
+  }
+  .subtitle-mobile-type-1 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 160%;
+  }
+  .subtitle-mobile-type-2 {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 160%;
+  }
+  .body-mobile-type-1 {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 160%;
+  }
+  .body-mobile-type-2 {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 160%;
+  }
+  .btn-lg {
+    font-size: 14px;
+    line-height: 140%;
+  }
+  .en-mobile-type-1 {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 110%;
+  }
+  .en-mobile-type-2 {
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 110%;
+  }
+  .en-mobile-type-3 {
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 110%;
+  }
+  .en-mobile-type-4 {
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 110%;
+  }
+}
+.footer {
+  background-color: #141414;
+  width: 100%;
+  margin-top: -25px;
+  padding: 40px 0px 35px;
+  border-radius: 25px 25px 0px 0px;
+}
+.footer .tit,
+.footer .mail {
+  color: #FFFFFF;
+  padding-top: 14px;
+}
+.footer .tit .mail-text,
+.footer .mail .mail-text {
+  color: #FFFFFF;
+  padding-left: 16px;
+}
+.footer .copyright {
+  color: #808080;
+  padding-top: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer .copyright {
+    padding-top: 77px;
+  }
+}

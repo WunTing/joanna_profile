@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--清除html/css預設樣式 -->
+    <link rel="stylesheet" type="text/css" href="../public/scss/css/normalize.css">
+
+    <!-- 頁面css元件 -->
+    <link rel="stylesheet" type="text/css" href="../public/scss/css/header.css">
+    <title>header</title>
+</head>
+
+
+<body>
+
+    <!-- header -->
+    <header class="header">
+        <div class="header-inner container">
+            <div class="header-logo">
+                <img class="header-logo-img" src="../public/scss/images/logo/my-logo.png" alt="my logo">
+            </div>
+            <ul class="header-list">
+                <li class="list-item item-one">
+                    <a class="button" href="javascript:void(0);">
+                        <span class="btn-lg">我的專案</span>
+                    </a>
+                    <ul class="header-dropdown-menu">
+                        <!-- 設計專案 -->
+                        <li class="tit-type-6">設計專案</li>
+                        <li class="body-type-2">
+                            <a href="">東南旅遊入口改版</a>
+                        </li>
+                        <li class="body-type-2">
+                            <a href="">票券訂購流程優化</a>
+                        </li>
+                        <li class="body-type-2">
+                            <a href="">東南皇家精選</a>
+                        </li>
+                        <li class="body-type-2">
+                            <a href="">尋找你的服務據點</a>
+                        </li>
+                        <li class="body-type-2">
+                            <a href="">常見問題Q&A</a>
+                        </li>
+                        <!-- 分隔線 -->
+                        <div class="divider-line">
+                            <div class="line"></div>
+                        </div>
+                        <!-- 互動設計 -->
+                        <li class="tit-type-6">互動設計</li>
+                        <li class="body-type-2">
+                            <a href="">閱讀節奏自己掌握</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="list-item">
+                    <a class="button" href="">
+                        <span class="btn-lg">關於我</span>
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a class="button" href="">
+                        <span class="btn-lg">履歷下載</span>
+                    </a>
+                </li>
+            </ul>
+            <button class="ham-menu-btn">
+                <img src="../public/scss/images/icon/hamburger-menu-24x24.png" alt="">
+            </button>
+        </div>
+    </header>
+    <div class="header-height-fix"></div>
+    <div class="header-list-mobile">
+        <button class="close-btn">
+            <img src="../public/scss/images/icon/close-24x24.png" alt="">
+        </button>
+        <ul class="header-dropdown-menu-mobile">
+            <!-- 設計專案 -->
+            <li class="subtitle-mobile-type-1">設計專案</li>
+            <li class="subtitle-mobile-type-2">
+                <a href="">東南旅遊入口改版</a>
+            </li>
+            <li class="subtitle-mobile-type-2">
+                <a href="">票券訂購流程優化</a>
+            </li>
+            <li class="subtitle-mobile-type-2">
+                <a href="">東南皇家精選</a>
+            </li>
+            <li class="subtitle-mobile-type-2">
+                <a href="">尋找你的服務據點</a>
+            </li>
+            <li class="subtitle-mobile-type-2">
+                <a href="">常見問題Q&A</a>
+            </li>
+            <!-- 分隔線 -->
+            <div class="divider-line">
+                <div class="line"></div>
+            </div>
+            <!-- 互動設計 -->
+            <li class="subtitle-mobile-type-1">互動設計</li>
+            <li class="subtitle-mobile-type-2">
+                <a href="">閱讀節奏自己掌握</a>
+            </li>
+            <!-- 分隔線 -->
+            <div class="divider-line">
+                <div class="line"></div>
+            </div>
+            <li class="subtitle-mobile-type-2">
+                <a href="">關於我</a>
+            </li>
+            <!-- 分隔線 -->
+            <div class="divider-line">
+                <div class="line"></div>
+            </div>
+            <li class="subtitle-mobile-type-2">
+                <a href="">履歷下載</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <!-- JQuery引入 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" ntegrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous"></script>
+
+    <script>
+        //M版漢堡按鈕，點擊出現選單
+        $(".header .ham-menu-btn").click(function (e) {
+            $(this).parents(".header").find(".header-list-mobile").toggleClass("active");
+            $(".header-list-mobile").fadeIn("fast");
+            // e.stopPropagation();
+        });
+        //M版漢堡按鈕，點擊關閉按鈕，關閉選單
+        $(".header-list-mobile .close-btn").click(function (e) {
+            $(this).parent(".header-list-mobile").hide();
+        });
+    </script>
+</body>
+
+</html>
