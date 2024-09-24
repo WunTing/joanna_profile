@@ -96,8 +96,10 @@
 }
 
 @media screen and (max-width: 576px) {
-    .index-background {
-        background: url("../images/index/background-image-mobile-576.png") top center no-repeat;
+    .index {
+        .index-background {
+            background: url("../images/index/background-image-mobile-576.png") top center no-repeat;
+        }
     }
 
     // 卡片
