@@ -665,7 +665,7 @@ button {
     top: 56px;
     height: auto;
     background-color: #F7F7F7;
-    padding: 0px 24px;
+    padding: 8px 24px;
   }
   .pin-menu-item .pin-menu {
     display: flex;
