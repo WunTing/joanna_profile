@@ -174,3 +174,8 @@
     }
 
 }
+
+//選單打開時，body禁止滾動的設定(控制寫在jquery)
+body.no-scroll {
+    overflow: hidden;
+}
