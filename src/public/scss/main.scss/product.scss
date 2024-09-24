@@ -1,0 +1,17 @@
+// base
+@import '../base/_variable.scss'; //基礎設定
+
+// components
+@import '../components/_button.scss'; //按鈕
+@import '../components/_content-info.scss'; // 圖文排版
+@import '../components/_decorate-font.scss'; // 裝飾文字
+@import '../components/_divider-line.scss'; //分隔線
+@import '../components/_footer.scss'; //footer
+@import '../components/_header.scss'; //header
+@import '../components/_point-card.scss'; // 重點資訊卡片
+@import '../components/_pin-menu.scss'; // pin側選單
+@import '../components/_slick.scss'; // slick輪播
+@import '../components/_title.scss'; // 標題
+
+// page
+@import '../page/_product.scss'; //product頁面樣式
