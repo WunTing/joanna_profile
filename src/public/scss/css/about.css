@@ -703,6 +703,7 @@ button {
 }
 .about-content .introduction .introduction-photo {
   margin-left: 40px;
+  flex: 1;
 }
 .about-content .introduction .introduction-photo .photo {
   width: 100%;
@@ -712,6 +713,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex: 3;
 }
 .about-content .introduction .introduction-info .tit {
   margin-top: 36px;
@@ -814,9 +816,6 @@ button {
   }
 }
 @media screen and (max-width: 991px) {
-  .about-content .introduction .introduction-photo {
-    flex: 1;
-  }
   .about-content .introduction .introduction-info {
     flex: 2;
   }
