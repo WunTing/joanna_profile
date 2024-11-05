@@ -1,6 +1,8 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
 * {
-  font-family: "Mulish", sans-serif, Arial, "Microsoft JhengHei", "Helvetica Neue", Helvetica;
+  font-family: "Mulish", "Noto Sans TC", sans-serif, Arial, "Microsoft JhengHei", "Helvetica Neue", Helvetica;
 }
 
 h1,
@@ -48,84 +50,98 @@ button {
   font-size: 40px;
   font-weight: bold;
   line-height: 125%;
+  letter-spacing: 0.6px;
 }
 
 .tit-type-2 {
   font-size: 32px;
   font-weight: bold;
   line-height: 125%;
+  letter-spacing: 0.6px;
 }
 
 .tit-type-3 {
   font-size: 26px;
   font-weight: bold;
   line-height: 125%;
+  letter-spacing: 0.6px;
 }
 
 .tit-type-4 {
   font-size: 20px;
   font-weight: bold;
   line-height: 160%;
+  letter-spacing: 0.2px;
 }
 
 .tit-type-5 {
   font-size: 18px;
   font-weight: bold;
   line-height: 160%;
+  letter-spacing: 0.2px;
 }
 
 .tit-type-6 {
   font-size: 16px;
   font-weight: bold;
   line-height: 160%;
+  letter-spacing: 0.2px;
 }
 
 .subtitle {
   font-size: 14px;
   font-weight: bold;
   line-height: 160%;
+  letter-spacing: 0.2px;
 }
 
 .body-type-1 {
   font-size: 16px;
   font-weight: normal;
   line-height: 160%;
+  letter-spacing: 0.2px;
 }
 
 .body-type-2 {
   font-size: 14px;
   font-weight: normal;
   line-height: 160%;
+  letter-spacing: 0.2px;
 }
 
 .remark {
   font-size: 12px;
   font-weight: normal;
   line-height: 140%;
+  letter-spacing: 0.2px;
 }
 
 .small {
   font-size: 11px;
   font-weight: normal;
   line-height: 140%;
+  letter-spacing: 0.2px;
 }
 
 .btn-lg {
   font-size: 16px;
   font-weight: bold;
   line-height: 160%;
+  letter-spacing: 0.2px;
 }
 
 .btn-md {
   font-size: 14px;
   font-weight: bold;
   line-height: 140%;
+  letter-spacing: 0.2px;
 }
 
 .btn-sm {
   font-size: 12px;
   font-weight: bold;
   line-height: 120%;
+  letter-spacing: 0.2px;
 }
 
 .en-type-1 {
@@ -163,40 +179,48 @@ button {
     font-size: 26px;
     font-weight: bold;
     line-height: 125%;
+    letter-spacing: 0.6px;
   }
   .tit-mobile-type-2 {
     font-size: 20px;
     font-weight: bold;
     line-height: 160%;
+    letter-spacing: 0.2px;
   }
   .tit-mobile-type-3 {
     font-size: 18px;
     font-weight: bold;
     line-height: 160%;
+    letter-spacing: 0.2px;
   }
   .subtitle-mobile-type-1 {
     font-size: 16px;
     font-weight: bold;
     line-height: 160%;
+    letter-spacing: 0.2px;
   }
   .subtitle-mobile-type-2 {
     font-size: 16px;
     font-weight: normal;
     line-height: 160%;
+    letter-spacing: 0.2px;
   }
   .body-mobile-type-1 {
     font-size: 14px;
     font-weight: bold;
     line-height: 160%;
+    letter-spacing: 0.2px;
   }
   .body-mobile-type-2 {
     font-size: 14px;
     font-weight: normal;
     line-height: 160%;
+    letter-spacing: 0.2px;
   }
   .btn-lg {
     font-size: 14px;
     line-height: 140%;
+    letter-spacing: 0.2px;
   }
   .en-mobile-type-1 {
     font-size: 40px;
@@ -224,13 +248,43 @@ button {
   border-radius: 25px;
   color: #FFFFFF;
   cursor: pointer;
+  padding: 9px 24px;
+  transition: 200ms;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+.btn-base::before, .btn-default-sm::before, .btn-default-md::before, .btn-default-lg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  transition: 400ms;
+  background-color: #444444;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  z-index: -1;
+}
+.btn-base .icon, .btn-default-sm .icon, .btn-default-md .icon, .btn-default-lg .icon {
+  transform: translateX(0%);
+  transition: 400ms;
 }
 
 .btn-state-base:active, .btn-default-sm:active, .btn-default-md:active, .btn-default-lg:active {
   background-color: #444444;
 }
 .btn-state-base:hover, .btn-default-sm:hover, .btn-default-md:hover, .btn-default-lg:hover {
-  background-color: #444444;
+  background-color: #141414;
+}
+.btn-state-base:hover:before, .btn-default-sm:hover:before, .btn-default-md:hover:before, .btn-default-lg:hover:before {
+  transform: scaleX(1);
+}
+.btn-state-base:hover .icon, .btn-default-sm:hover .icon, .btn-default-md:hover .icon, .btn-default-lg:hover .icon {
+  transform: translateX(10%);
 }
 .btn-state-base:focus, .btn-default-sm:focus, .btn-default-md:focus, .btn-default-lg:focus {
   outline: 4px solid rgba(0, 0, 0, 0.2);
@@ -240,10 +294,22 @@ button {
   background-color: #CCCCCC;
   cursor: not-allowed;
 }
-
-.btn-default-lg {
-  padding: 9px 24px;
+.btn-disable-base::before, .btn-default-sm.disable::before, .btn-default-md.disable::before, .btn-default-lg.disable::before {
+  content: "";
+  position: static;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 0%;
+  height: 0%;
+  transition: 0ms;
+  background-color: #CCCCCC;
+  transform: scaleX(0);
+  transform-origin: 0 0%;
+  z-index: 0;
 }
+
 .btn-default-md {
   padding: 8px 16px;
 }
@@ -347,6 +413,13 @@ button {
   float: left;
   margin-left: 60px;
   position: relative;
+  transition: ease-in-out 200ms;
+  background-color: transparent;
+  border-radius: 25px;
+  padding: 8px 0px;
+}
+.header-list .list-item:hover {
+  background-color: #FFFFFF;
 }
 .header-list .list-item > a.button {
   padding: 20px 8px;
@@ -357,34 +430,46 @@ button {
   padding: 20px 8px;
 }
 .header-list .list-item:hover > a.button {
-  padding: 6px 8px;
-  border-radius: 25px;
-  background-color: #FFFFFF;
   color: #141414;
 }
 
 .item-one .header-dropdown-menu {
   background-color: #FFFFFF;
   min-width: 260px;
-  padding: 20px;
+  padding: 20px 0px;
   border-radius: 0 0 25px 25px;
   display: none;
   list-style-type: none;
   position: absolute;
-  top: 43px;
+  top: 51px;
   z-index: 1;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
+  transition: ease-in-out 300ms;
 }
 .item-one .header-dropdown-menu li {
-  padding: 8px 12px;
+  margin: 4px 0px;
+}
+.item-one .header-dropdown-menu li.tit {
+  margin: 8px 32px 12px 32px;
 }
 .item-one .header-dropdown-menu a {
   text-decoration: none;
   color: #141414;
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  transition: ease-in-out 40ms;
+  padding: 8px 32px;
+}
+.item-one .header-dropdown-menu a .icon {
+  display: none;
+  width: 20px;
+  height: 20px;
 }
 .item-one .header-dropdown-menu a:hover {
-  color: #264480;
+  background-color: #d3dce9;
+}
+.item-one .header-dropdown-menu a:hover .icon {
+  display: block;
 }
 
 .item-one:hover .header-dropdown-menu {
@@ -415,6 +500,7 @@ button {
     display: none;
     width: 100%;
     height: 100vh;
+    overflow-y: scroll;
     background-color: #FFFFFF;
     position: fixed;
     z-index: 2;
@@ -433,12 +519,16 @@ button {
     padding: 0px 20px 20px 20px;
   }
   .header-list-mobile .header-dropdown-menu-mobile li {
-    padding: 8px 12px;
+    margin: 4px 12px;
+  }
+  .header-list-mobile .header-dropdown-menu-mobile li.tit {
+    margin: 8px 12px 12px 12px;
   }
   .header-list-mobile .header-dropdown-menu-mobile a {
     text-decoration: none;
     color: #141414;
     display: block;
+    padding: 8px 0px;
   }
   .header-list-mobile .header-dropdown-menu-mobile a:focus {
     color: #264480;
@@ -451,12 +541,13 @@ button {
   overflow: hidden;
 }
 
-.decorate-font-left-straight.en-type-5.en-mobile-type-4 {
+.decorate-font-left-straight {
   transform: rotate(90deg);
-  transform-origin: 0 24px;
+  transform-origin: -24px 40px;
   display: inline-block;
+  color: #141414;
 }
-.decorate-font-left-straight.en-type-5.en-mobile-type-4::after {
+.decorate-font-left-straight::after {
   content: "";
   display: inline-block;
   height: 1px;
@@ -465,21 +556,59 @@ button {
   position: relative;
   margin: 2px 10px;
 }
+.decorate-font-left-straight.white {
+  color: #FFFFFF;
+}
+.decorate-font-left-straight.white::after {
+  background-color: #FFFFFF;
+}
 
-.decorate-font-right-horizontal.en-type-5.en-mobile-type-4 {
+.decorate-font-right-horizontal {
+  color: #141414;
   text-align: right;
 }
-.decorate-font-right-horizontal.en-type-5.en-mobile-type-4::after {
+.decorate-font-right-horizontal::before {
   content: "";
   display: inline-block;
   height: 1px;
   background-color: #141414;
-  width: 120px;
+  width: 40%;
   margin: 2px 10px;
+}
+.decorate-font-right-horizontal.white {
+  color: #FFFFFF;
+}
+.decorate-font-right-horizontal.white::before {
+  background-color: #FFFFFF;
+}
+
+.decorate-font-left-horizontal {
+  color: #141414;
+  text-align: left;
+  position: relative;
+}
+.decorate-font-left-horizontal::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  height: 1px;
+  background-color: #141414;
+  width: 40%;
+  margin: 2px 10px;
+}
+.decorate-font-left-horizontal.white {
+  color: #FFFFFF;
+}
+.decorate-font-left-horizontal.white::after {
+  background-color: #FFFFFF;
 }
 
 .section-title {
   margin: 80px 0px 40px 0px;
+}
+
+.section-title-short {
+  margin: 8px 0px;
 }
 
 .section-title-line::before {
@@ -497,9 +626,32 @@ button {
     margin-bottom: -4px;
   }
 }
+.images-cut {
+  overflow: hidden;
+  border-radius: 25px;
+  width: 100%;
+  height: 100%;
+}
+
+/* 文字效果 */
+.textWrap {
+  overflow: hidden;
+  display: block;
+}
+
+/* 文字從下向上飛入 */
+.textUp {
+  display: block;
+}
+
+/* 文字從左向右飛入 */
+.textRight {
+  display: block;
+}
+
 .index-background {
   position: fixed;
-  top: 0;
+  top: 60px;
   left: 0;
   width: 100%;
   height: 100%;
@@ -513,13 +665,15 @@ button {
   height: 100%;
   overflow: scroll;
 }
-.index-background .index-content .opening-font {
+
+.opening-font {
   padding: 10vh 8%;
 }
-.index-background .index-content .opening-font .en-type-1.en-mobile-type-1 {
+.opening-font .en-type-1.en-mobile-type-1 {
   padding-bottom: 40px;
 }
-.index-background .index-content .section-title {
+
+.section-title {
   color: #141414;
 }
 
@@ -547,9 +701,10 @@ button {
   margin-top: -120px;
 }
 .index-project-card .card-content .point {
-  color: #CCCCCC;
+  color: #141414;
   padding: 120px 0px 0px 0px;
   position: relative;
+  opacity: 0.2;
 }
 .index-project-card .card-content .card {
   width: 100%;
@@ -567,11 +722,12 @@ button {
   .index-background {
     background: url("../images/index/background-image-mobile-767.png") top center no-repeat;
     background-size: cover;
+    top: 56px;
   }
-  .index-background .index-content .opening-font {
+  .index-content .opening-font {
     padding: 12vh 0px 12vh 60px;
   }
-  .index-background .index-content .opening-font .en-type-1.en-mobile-type-1 {
+  .index-content .opening-font .en-type-1.en-mobile-type-1 {
     padding-bottom: 24px;
   }
   .index-project-card-layout-flex {
