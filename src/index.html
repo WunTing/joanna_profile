@@ -11,17 +11,23 @@
 
     <!-- 頁面css元件 -->
     <link rel="stylesheet" type="text/css" href="./public/scss/css/index.css">
+
+    <!-- favorite icon -->
+    <link rel="icon" sizes="196x196" href="../src/public/scss/images/icon/favorite-icon-196x196.png">
 </head>
 
 <body>
+    <!-- 背景圖片 -->
     <div class="index-background">
-        <div class="index-content">
+    </div>
+    <div class="index-content">
+        <div class="">
             <!-- header -->
             <header class="header">
                 <div class="header-inner container">
-                    <div class="header-logo">
+                    <a href="" class="header-logo">
                         <img class="header-logo-img" src="../src/public/scss/images/logo/my-logo.png" alt="my logo">
-                    </div>
+                    </a>
                     <ul class="header-list">
                         <li class="list-item item-one">
                             <a class="button" href="javascript:void(0);">
@@ -29,30 +35,48 @@
                             </a>
                             <ul class="header-dropdown-menu">
                                 <!-- 設計專案 -->
-                                <li class="tit-type-6">設計專案</li>
+                                <li class="tit-type-6 tit">設計專案</li>
                                 <li class="body-type-2">
-                                    <a href="">東南旅遊入口改版</a>
+                                    <a href="">東南旅遊入口改版
+                                        <img class="icon"
+                                            src="../src/public/scss/images/icon/chevron-right-black-24x24.svg" alt="">
+                                    </a>
                                 </li>
                                 <li class="body-type-2">
-                                    <a href="">票券訂購流程優化</a>
+                                    <a href="">票券訂購流程優化
+                                        <img class="icon"
+                                            src="../src/public/scss/images/icon/chevron-right-black-24x24.svg" alt="">
+                                    </a>
                                 </li>
                                 <li class="body-type-2">
-                                    <a href="">東南皇家精選</a>
+                                    <a href="">東南皇家精選
+                                        <img class="icon"
+                                            src="../src/public/scss/images/icon/chevron-right-black-24x24.svg" alt="">
+                                    </a>
                                 </li>
                                 <li class="body-type-2">
-                                    <a href="">尋找你的服務據點</a>
+                                    <a href="">尋找你的服務據點
+                                        <img class="icon"
+                                            src="../src/public/scss/images/icon/chevron-right-black-24x24.svg" alt="">
+                                    </a>
                                 </li>
                                 <li class="body-type-2">
-                                    <a href="">常見問題Q&A</a>
+                                    <a href="">常見問題Q&A
+                                        <img class="icon"
+                                            src="../src/public/scss/images/icon/chevron-right-black-24x24.svg" alt="">
+                                    </a>
                                 </li>
                                 <!-- 分隔線 -->
                                 <div class="divider-line">
                                     <div class="line"></div>
                                 </div>
                                 <!-- 互動設計 -->
-                                <li class="tit-type-6">互動設計</li>
+                                <li class="tit-type-6 tit">互動設計</li>
                                 <li class="body-type-2">
-                                    <a href="">閱讀節奏自己掌握</a>
+                                    <a href="">閱讀節奏自己掌握
+                                        <img class="icon"
+                                            src="../src/public/scss/images/icon/chevron-right-black-24x24.svg" alt="">
+                                    </a>
                                 </li>
                             </ul>
                         </li>
@@ -79,7 +103,7 @@
                 </button>
                 <ul class="header-dropdown-menu-mobile">
                     <!-- 設計專案 -->
-                    <li class="subtitle-mobile-type-1">設計專案</li>
+                    <li class="subtitle-mobile-type-1 tit">設計專案</li>
                     <li class="subtitle-mobile-type-2">
                         <a href="">東南旅遊入口改版</a>
                     </li>
@@ -100,7 +124,7 @@
                         <div class="line"></div>
                     </div>
                     <!-- 互動設計 -->
-                    <li class="subtitle-mobile-type-1">互動設計</li>
+                    <li class="subtitle-mobile-type-1 tit">互動設計</li>
                     <li class="subtitle-mobile-type-2">
                         <a href="">閱讀節奏自己掌握</a>
                     </li>
@@ -123,51 +147,64 @@
 
             <!-- 首頁內容 -->
             <div id="no-scroll" class="container no-scroll ">
-
                 <!-- Welcome to my profile 裝飾文字 -->
-                <div class="decorate-font-left-straight en-type-5 en-mobile-type-4 ">
+                <div id="decorateFontLeftStraight" class="decorate-font-left-straight en-type-5 en-mobile-type-4 ">
                     Welcome to my profile
                 </div>
 
                 <!-- 開場文字 -->
-                <div class="opening-font">
-                    <div class="en-type-1 en-mobile-type-1 ">
-                        Hello
-                        <br>
-                        I'm Joanna
+                <div id="opening" class="opening-font">
+                    <div id="openingTit">
+                        <div class="en-type-1 en-mobile-type-1">
+                            Hello
+                            <br>
+                            I'm Joanna
+                        </div>
+
+                        <h3 class="tit-type-3 tit-mobile-type-3">
+                            我是一位UI/UX designer，專注傾聽使用者的需求，創造美好的使用體驗
+                        </h3>
                     </div>
-                    <h3 class="tit-type-3 tit-mobile-type-3">
-                        我是一位UI/UX designer，專注傾聽使用者的需求，創造美好的使用體驗
-                    </h3>
                 </div>
 
                 <!-- 2024 裝飾文字 -->
-                <div class="decorate-font-right-horizontal en-type-5 en-mobile-type-4 ">
+                <div id="decorateFontRightHorizontal"
+                    class="decorate-font-right-horizontal en-type-5 en-mobile-type-4 ">
                     2024
                 </div>
 
                 <main>
                     <!-- 專案卡片區 -->
-                    <section>
+                    <section id="projectCard">
                         <h2 class="section-title tit-type-2 tit-mobile-type-1 text-center">
                             設計專案
                         </h2>
                         <!-- 卡片-1 -->
-                        <article>
+                        <article class="fade-in-animate">
                             <div class="index-project-card">
-                                <img class="card-banner"
-                                    src="../src/public/scss/images/index/project_1_banne_2400x840.jpg" alt="">
+                                <div class="images-cut">
+                                    <img class="card-banner"
+                                        src="../src/public/scss/images/index/project_1_banne_2400x840.jpg" alt="">
+                                </div>
+
                                 <div class="card-content">
                                     <div class="point en-type-1">
-                                        01
+                                        <div class="textWrap">
+                                            <div class="textUp">
+                                                01
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="card">
-                                        <h2 class="tit-type-2 tit-mobile-type-3">
-                                            東南旅遊入口改版
-                                        </h2>
-                                        <h5 class="tit-type-5 body-mobile-type-1">
-                                            打造舒適的閱讀版面，提升商品曝光度
-                                        </h5>
+                                    <div class="card textWrap">
+                                        <div class="textUp">
+                                            <h2 class="tit-type-2 tit-mobile-type-3">
+                                                東南旅遊入口改版
+                                            </h2>
+                                            <h5 class="tit-type-5 body-mobile-type-1">
+                                                打造舒適的閱讀版面，提升商品曝光度
+                                            </h5>
+                                        </div>
+
                                         <button class="btn-default-lg">
                                             <span class="btn-lg">
                                                 看更多
@@ -180,21 +217,29 @@
                             </div>
                         </article>
                         <!-- 卡片-2 -->
-                        <article>
+                        <article class="fade-in-animate">
                             <div class="index-project-card">
-                                <img class="card-banner"
-                                    src="../src/public/scss/images/index/project_2_banne_2400x840.jpg" alt="">
+                                <div class="images-cut">
+                                    <img class="card-banner"
+                                        src="../src/public/scss/images/index/project_2_banne_2400x840.jpg" alt="">
+                                </div>
                                 <div class="card-content">
                                     <div class="point en-type-1">
-                                        02
+                                        <div class="textWrap">
+                                            <div class="textUp">
+                                                02
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="card">
-                                        <h2 class="tit-type-2 tit-mobile-type-3">
-                                            票券訂購流程優化
-                                        </h2>
-                                        <h5 class="tit-type-5 body-mobile-type-1">
-                                            讓您輕鬆訂購餐飲/車票/展覽各式票券
-                                        </h5>
+                                    <div class="card textWrap">
+                                        <div class="textUp">
+                                            <h2 class="tit-type-2 tit-mobile-type-3">
+                                                票券訂購流程優化
+                                            </h2>
+                                            <h5 class="tit-type-5 body-mobile-type-1">
+                                                讓您輕鬆訂購餐飲/車票/展覽各式票券
+                                            </h5>
+                                        </div>
                                         <button class="btn-default-lg">
                                             <span class="btn-lg">
                                                 看更多
@@ -207,21 +252,29 @@
                             </div>
                         </article>
                         <!-- 卡片-3 -->
-                        <article>
+                        <article class="fade-in-animate">
                             <div class="index-project-card">
-                                <img class="card-banner"
-                                    src="../src/public/scss/images/index/project_3_banne_2400x840.jpg" alt="">
+                                <div class="images-cut">
+                                    <img class="card-banner"
+                                        src="../src/public/scss/images/index/project_3_banne_2400x840.jpg" alt="">
+                                </div>
                                 <div class="card-content">
                                     <div class="point en-type-1">
-                                        03
+                                        <div class="textWrap">
+                                            <div class="textUp">
+                                                03
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="card">
-                                        <h2 class="tit-type-2 tit-mobile-type-3">
-                                            東南皇家精選
-                                        </h2>
-                                        <h5 class="tit-type-5 body-mobile-type-1">
-                                            販售酒品的網站設計與開發，帶您一同享高質感的尋酒樂趣
-                                        </h5>
+                                    <div class="card textWrap">
+                                        <div class="textUp">
+                                            <h2 class="tit-type-2 tit-mobile-type-3">
+                                                東南皇家精選
+                                            </h2>
+                                            <h5 class="tit-type-5 body-mobile-type-1">
+                                                販售酒品的網站設計與開發，帶您一同享高質感的尋酒樂趣
+                                            </h5>
+                                        </div>
                                         <button class="btn-default-lg">
                                             <span class="btn-lg">
                                                 看更多
@@ -236,21 +289,29 @@
                         </article>
                         <div class="index-project-card-layout-flex">
                             <!-- 卡片-4 -->
-                            <article>
+                            <article class="fade-in-animate">
                                 <div class="index-project-card">
-                                    <img class="card-banner"
-                                        src="../src/public/scss/images/index/project_4_banne_2400x840.jpg" alt="">
+                                    <div class="images-cut">
+                                        <img class="card-banner"
+                                            src="../src/public/scss/images/index/project_4_banne_2400x840.jpg" alt="">
+                                    </div>
                                     <div class="card-content">
                                         <div class="point en-type-1">
-                                            04
+                                            <div class="textWrap">
+                                                <div class="textUp">
+                                                    04
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="card">
-                                            <h2 class="tit-type-2 tit-mobile-type-3">
-                                                尋找你的服務據點
-                                            </h2>
-                                            <h5 class="tit-type-5 body-mobile-type-1">
-                                                幫助您快速找到您想要聯絡的門市資訊
-                                            </h5>
+                                        <div class="card textWrap">
+                                            <div class="textUp">
+                                                <h2 class="tit-type-2 tit-mobile-type-3">
+                                                    尋找你的服務據點
+                                                </h2>
+                                                <h5 class="tit-type-5 body-mobile-type-1">
+                                                    幫助您快速找到您想要聯絡的門市資訊
+                                                </h5>
+                                            </div>
                                             <button class="btn-default-lg">
                                                 <span class="btn-lg">
                                                     看更多
@@ -265,21 +326,29 @@
                                 </div>
                             </article>
                             <!-- 卡片-5 -->
-                            <article>
+                            <article class="fade-in-animate">
                                 <div class="index-project-card">
-                                    <img class="card-banner"
-                                        src="../src/public/scss/images/index/project_5_banne_2400x840.jpg" alt="">
+                                    <div class="images-cut">
+                                        <img class="card-banner"
+                                            src="../src/public/scss/images/index/project_5_banne_2400x840.jpg" alt="">
+                                    </div>
                                     <div class="card-content">
                                         <div class="point en-type-1">
-                                            05
+                                            <div class="textWrap">
+                                                <div class="textUp">
+                                                    05
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="card">
-                                            <h2 class="tit-type-2 tit-mobile-type-3">
-                                                Pastania
-                                            </h2>
-                                            <h5 class="tit-type-5 body-mobile-type-1">
-                                                用趣味的方式來販售義大利麵
-                                            </h5>
+                                        <div class="card textWrap">
+                                            <div class="textUp">
+                                                <h2 class="tit-type-2 tit-mobile-type-3">
+                                                    Pastania
+                                                </h2>
+                                                <h5 class="tit-type-5 body-mobile-type-1">
+                                                    用趣味的方式來販售義大利麵
+                                                </h5>
+                                            </div>
                                             <button class="btn-default-lg">
                                                 <span class="btn-lg">
                                                     看更多
@@ -296,21 +365,29 @@
                         </div>
                         <div class="index-project-card-layout-flex">
                             <!-- 卡片-6 -->
-                            <article>
+                            <article class="fade-in-animate">
                                 <div class="index-project-card">
-                                    <img class="card-banner"
-                                        src="../src/public/scss/images/index/project_6_banne_2400x840.jpg" alt="">
+                                    <div class="images-cut">
+                                        <img class="card-banner"
+                                            src="../src/public/scss/images/index/project_6_banne_2400x840.jpg" alt="">
+                                    </div>
                                     <div class="card-content">
                                         <div class="point en-type-1">
-                                            06
+                                            <div class="textWrap">
+                                                <div class="textUp">
+                                                    06
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="card">
-                                            <h2 class="tit-type-2 tit-mobile-type-3">
-                                                閱讀節奏自己掌握
-                                            </h2>
-                                            <h5 class="tit-type-5 body-mobile-type-1">
-                                                滾動觸發動畫，抓住使用者的視線
-                                            </h5>
+                                        <div class="card textWrap">
+                                            <div class="textUp">
+                                                <h2 class="tit-type-2 tit-mobile-type-3">
+                                                    閱讀節奏自己掌握
+                                                </h2>
+                                                <h5 class="tit-type-5 body-mobile-type-1">
+                                                    滾動觸發動畫，抓住使用者的視線
+                                                </h5>
+                                            </div>
                                             <button class="btn-default-lg">
                                                 <span class="btn-lg">
                                                     看更多
@@ -335,8 +412,6 @@
 
                     </section>
                 </main>
-
-
             </div>
 
             <!-- footer -->
@@ -363,6 +438,11 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js" ntegrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
         crossorigin="anonymous"></script>
 
+    <!-- GSAP 捲動效果套件 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+
     <script>
         //M版漢堡按鈕，點擊出現選單
         $(".header .ham-menu-btn").click(function (e) {
@@ -375,6 +455,87 @@
             $(this).parent(".header-list-mobile").hide();
             document.body.finds('#no-scroll').classList.remove('no-scroll');//選單打開時，body禁止滾動
         });
+
+        // GSAP動畫js設定
+        gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
+
+        // 動畫-開場
+        // gsap.set("#opening", { scale: 0.7 })
+        gsap.timeline().from("#opening", { duration: 0.5, opacity: 0 })
+            .from("#openingTit", { duration: 0.5, opacity: 0, x: -24, ease: "power1.in" })
+            .from("#decorateFontLeftStraight", { opacity: 0, y: -24, ease: "power1.in" })
+            .from("#decorateFontRightHorizontal", { duration: 0.5, opacity: 0, x: 24, ease: "power1.in" }, "<")
+            .from("#projectCard", { opacity: 0, ease: "power1.in" });
+
+        // 動畫-段落飛入
+        gsap.utils.toArray(".fade-in-animate").forEach(function (infoFadeIn) {
+            gsap.set(infoFadeIn, {
+                opacity: 0,
+                y: 20,
+                ease: "power2.out",
+            });
+
+            const tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: infoFadeIn,
+                    start: "top 100%",
+                    end: "top 50%",
+                    scrub: 2,
+                }
+            });
+
+            tl.to(infoFadeIn, {
+                opacity: 1,
+                y: 0
+            });
+        });
+
+        // 動畫-圖片縮放
+        gsap.utils.toArray(".images-cut img").forEach(function (image) {
+            gsap.set(image, {
+                scale: 1.1,
+                ease: "power2.out"
+            });
+
+            const tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: image,
+                    start: "center bottom",
+                    end: "bottom bottom",
+                    scrub: 1,
+                }
+            });
+
+            tl.to(image, {
+                scale: 1
+            });
+        });
+
+        // 動畫-文字從下向上飛入
+        gsap.utils.toArray(".textUp").forEach(function (textUp) {
+            gsap.set(textUp, {
+                yPercent: 20,
+                opacity: 0,
+            });
+
+            const tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: textUp,
+                    start: "top 100%",
+                    end: "bottom bottom",
+                    scrub: 1,
+                    duration: 5,
+                    // once: true,
+                },
+            });
+
+            tl.to(textUp, {
+                yPercent: 0,
+                opacity: 1,
+            });
+        });
+
     </script>
 </body>
 

@@ -12,6 +12,9 @@
     <!-- 頁面css元件 -->
     <link rel="stylesheet" type="text/css" href="./public/scss/css/project.css">
 
+    <!-- favorite icon -->
+    <link rel="icon" sizes="196x196" href="../src/public/scss/images/icon/favorite-icon-196x196.png">
+
     <!-- slick輪播套件 -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css"
@@ -23,9 +26,9 @@
     <!-- header -->
     <header class="header">
         <div class="header-inner container">
-            <div class="header-logo">
+            <a href="" class="header-logo">
                 <img class="header-logo-img" src="../src/public/scss/images/logo/my-logo.png" alt="my logo">
-            </div>
+            </a>
             <ul class="header-list">
                 <li class="list-item item-one">
                     <a class="button" href="javascript:void(0);">
@@ -33,30 +36,48 @@
                     </a>
                     <ul class="header-dropdown-menu">
                         <!-- 設計專案 -->
-                        <li class="tit-type-6">設計專案</li>
+                        <li class="tit-type-6 tit">設計專案</li>
                         <li class="body-type-2">
-                            <a href="">東南旅遊入口改版</a>
+                            <a href="">東南旅遊入口改版
+                                <img class="icon" src="../src/public/scss/images/icon/chevron-right-black-24x24.svg"
+                                    alt="">
+                            </a>
                         </li>
                         <li class="body-type-2">
-                            <a href="">票券訂購流程優化</a>
+                            <a href="">票券訂購流程優化
+                                <img class="icon" src="../src/public/scss/images/icon/chevron-right-black-24x24.svg"
+                                    alt="">
+                            </a>
                         </li>
                         <li class="body-type-2">
-                            <a href="">東南皇家精選</a>
+                            <a href="">東南皇家精選
+                                <img class="icon" src="../src/public/scss/images/icon/chevron-right-black-24x24.svg"
+                                    alt="">
+                            </a>
                         </li>
                         <li class="body-type-2">
-                            <a href="">尋找你的服務據點</a>
+                            <a href="">尋找你的服務據點
+                                <img class="icon" src="../src/public/scss/images/icon/chevron-right-black-24x24.svg"
+                                    alt="">
+                            </a>
                         </li>
                         <li class="body-type-2">
-                            <a href="">常見問題Q&A</a>
+                            <a href="">常見問題Q&A
+                                <img class="icon" src="../src/public/scss/images/icon/chevron-right-black-24x24.svg"
+                                    alt="">
+                            </a>
                         </li>
                         <!-- 分隔線 -->
                         <div class="divider-line">
                             <div class="line"></div>
                         </div>
                         <!-- 互動設計 -->
-                        <li class="tit-type-6">互動設計</li>
+                        <li class="tit-type-6 tit">互動設計</li>
                         <li class="body-type-2">
-                            <a href="">閱讀節奏自己掌握</a>
+                            <a href="">閱讀節奏自己掌握
+                                <img class="icon" src="../src/public/scss/images/icon/chevron-right-black-24x24.svg"
+                                    alt="">
+                            </a>
                         </li>
                     </ul>
                 </li>
@@ -83,7 +104,7 @@
         </button>
         <ul class="header-dropdown-menu-mobile">
             <!-- 設計專案 -->
-            <li class="subtitle-mobile-type-1">設計專案</li>
+            <li class="subtitle-mobile-type-1 tit">設計專案</li>
             <li class="subtitle-mobile-type-2">
                 <a href="">東南旅遊入口改版</a>
             </li>
@@ -104,7 +125,7 @@
                 <div class="line"></div>
             </div>
             <!-- 互動設計 -->
-            <li class="subtitle-mobile-type-1">互動設計</li>
+            <li class="subtitle-mobile-type-1 tit">互動設計</li>
             <li class="subtitle-mobile-type-2">
                 <a href="">閱讀節奏自己掌握</a>
             </li>
@@ -127,26 +148,30 @@
 
     <div id="no-scroll" class="product">
         <!-- banner -->
-        <img class="product-banner-img" src="../src/public/scss/images/project_01/project_1_banne_2400x840.jpg" alt="">
-        <div class="product-banner-mask">
-            <div class="product-top-tit">
-                <div class="container">
-                    <h1 class="tit-type-1 tit-mobile-type-1">
-                        東南旅遊入口改版
-                    </h1>
-                    <h2 class="tit-type-2 subtitle-mobile-type-1">
-                        打造舒適的閱讀版面，提升商品曝光度
-                    </h2>
+        <div id="opening">
+            <img class="product-banner-img" src="../src/public/scss/images/project_01/project_1_banne_2400x840.jpg"
+                alt="">
+            <div class="product-banner-mask">
+                <div class="product-top-tit">
+                    <div class="container">
+                        <div id="openingTit">
+                            <h1 class="tit-type-1 tit-mobile-type-1">
+                                東南旅遊入口改版
+                            </h1>
+                            <h2 class="tit-type-2 subtitle-mobile-type-1">
+                                打造舒適的閱讀版面，提升商品曝光度
+                            </h2>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- 主要內容區塊 -->
         <main class="product-content-card">
-
             <!-- 重點資訊卡片 -->
             <div class="container">
-                <section class="point-card">
+                <section id="pointCard" class="point-card">
                     <div class="card">
                         <div class="tit body-type-1 body-mobile-type-2">
                             專案時間
@@ -203,20 +228,18 @@
                 <!-- 圖文內容 -->
                 <div class="content-info">
                     <section class="info" id="info_01">
-                        <article>
-                            <h2 class="section-title-line tit-type-3 tit-mobile-type-2">
-                                專案背景
-                            </h2>
-                            <p class="info-text body-type-1 body-mobile-type-2">
-                                旅遊網站的票券系統，有販售各種展演的票券、餐券、體驗票券、車票...等等，針對每種票種，會有特定的販售方式，例如時間的選擇、日期的選擇、成人票兒童票的選擇...等等，因此我們整合出一套順暢好操作的訂購流程。
-                            </p>
-                            <div class="info-img-block">
-                                <img class="info-img h-600"
-                                    src="../src/public/scss/images/project_01/01_project_explain_2000x1200.jpg" alt="">
-                            </div>
-                        </article>
+                        <h2 class="section-title-line tit-type-3 tit-mobile-type-2">
+                            專案背景
+                        </h2>
+                        <p class="info-text body-type-1 body-mobile-type-2">
+                            旅遊網站的票券系統，有販售各種展演的票券、餐券、體驗票券、車票...等等，針對每種票種，會有特定的販售方式，例如時間的選擇、日期的選擇、成人票兒童票的選擇...等等，因此我們整合出一套順暢好操作的訂購流程。
+                        </p>
+                        <div class="info-img-block">
+                            <img class="info-img h-600"
+                                src="../src/public/scss/images/project_01/01_project_explain_2000x1200.jpg" alt="">
+                        </div>
                     </section>
-                    <section class="info" id="info_02">
+                    <section class="info fade-in-animate" id="info_02">
                         <h2 class="section-title-line tit-type-3 tit-mobile-type-2">
                             專案概覽
                         </h2>
@@ -234,7 +257,7 @@
                                     角色任務
                                 </p>
                                 <p class="card body-type-1 body-mobile-type-2">
-                                    在這個專案裡，我與PM、前端工程師和後端工程師合作，我負責處理UI/UX設計、製作RWD切版、上線前的測試。
+                                    在這個專案裡，我與PM、前端工程師和後端工程師合作，我負責處理UI/UX設計、使用Bootstrap製作RWD切版、上線前的測試。
                                 </p>
                             </div>
                         </div>
@@ -257,7 +280,7 @@
                             </div>
                         </div>
                     </section>
-                    <section class="info" id="info_03">
+                    <section class="info fade-in-animate" id="info_03">
                         <h2 class="section-title-line tit-type-3 tit-mobile-type-2">
                             找到問題
                         </h2>
@@ -285,7 +308,7 @@
                             </div>
                         </div>
                     </section>
-                    <section class="info" id="info_04">
+                    <section class="info fade-in-animate" id="info_04">
                         <h2 class="section-title-line tit-type-3 tit-mobile-type-2">
                             解決方法
                         </h2>
@@ -333,7 +356,7 @@
                             </p>
                         </div>
                     </section>
-                    <section class="info" id="info_05">
+                    <section class="info fade-in-animate" id="info_05">
                         <h2 class="section-title-line tit-type-3 tit-mobile-type-2">
                             設計規劃
                         </h2>
@@ -410,24 +433,21 @@
                             </div>
                         </div>
                     </section>
-                    <section class="info" id="info_06">
+                    <section class="info fade-in-animate" id="info_06">
                         <h2 class="section-title-line tit-type-3 tit-mobile-type-2">
                             反思與學習
                         </h2>
-                        <div class="info-item">
-                            <div class="info-img-block">
-                                <img class="info-img h-200"
-                                    src="../src/public/scss/images/project_01/01_thinking_2000x400.jpg" alt="">
-                            </div>
-                            <p class="info-text body-type-1 body-mobile-type-2">
-                                這個專案整個跑一輪下來，學習到很多不同面向的事物，發現不只是站在外部使用者的角度思考，還有內部使用者(公司成員)，另外還有和工程師開發時會遇到很多執行面的問題，要讓這麼多方的角色達到一個平衡，需要做很多的溝通和討論，有大家一起努力才能夠完成。
-                            </p>
-                            <p class="info-text body-type-1 body-mobile-type-2">
-                                在專案上線後，定期安排檢視使用狀況，使用Hotjar來查看熱點圖，用來確認使用者是否有按照我們安排的腳本在進行操作，另外有使用 Google PageSpeed
-                                Insights來檢查我們有哪些地方不足，修正那些不足，讓Google搜尋排行向上提升。
-                            </p>
+                        <div class="info-img-block">
+                            <img class="info-img h-200"
+                                src="../src/public/scss/images/project_01/01_thinking_2000x400.jpg" alt="">
                         </div>
-
+                        <p class="info-text body-type-1 body-mobile-type-2">
+                            這個專案整個跑一輪下來，學習到很多不同面向的事物，發現不只是站在外部使用者的角度思考，還有內部使用者(公司成員)，另外還有和工程師開發時會遇到很多執行面的問題，要讓這麼多方的角色達到一個平衡，需要做很多的溝通和討論，有大家一起努力才能夠完成。
+                        </p>
+                        <p class="info-text body-type-1 body-mobile-type-2">
+                            在專案上線後，定期安排檢視使用狀況，使用Hotjar來查看熱點圖，用來確認使用者是否有按照我們安排的腳本在進行操作，另外有使用 Google PageSpeed
+                            Insights來檢查我們有哪些地方不足，修正那些不足，讓Google搜尋排行向上提升。
+                        </p>
                     </section>
                 </div>
             </div>
@@ -595,6 +615,10 @@
     <!-- slick輪播套件 -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
+    <!-- GSAP 捲動效果套件 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
 
     <script>
         //M版漢堡按鈕，點擊出現選單
@@ -608,6 +632,41 @@
             $(this).parent(".header-list-mobile").hide();
             document.body.finds('#no-scroll').classList.remove('no-scroll');//選單打開時，body禁止滾動
         });
+
+        // GSAP動畫js設定
+        gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
+        // 動畫-開場
+        // gsap.set("#opening", { scale: 0.7 })
+        gsap.timeline().from("#opening", { duration: 0.5, opacity: 0 })
+            .from("#openingTit", { duration: 0.5, opacity: 0, x: -24, ease: "power1.in" })
+            .from("#pointCard", { opacity: 0, y: -20, ease: "power1.in" })
+            .from(".content-info-block", { opacity: 0, ease: "power1.in" });
+
+        // 動畫-段落飛入
+        gsap.utils.toArray(".fade-in-animate").forEach(function (infoFadeIn) {
+            gsap.set(infoFadeIn, {
+                opacity: 0,
+                y: 20,
+                ease: "power2.out",
+            });
+
+            const tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: infoFadeIn,
+                    start: "top 80%",
+                    end: "top 50%",
+                    scrub: 2,
+                }
+            });
+
+            tl.to(infoFadeIn, {
+                opacity: 1,
+                y: 0
+            });
+        });
+
+
 
         // pin測選單，滾動監聽
         // $(document).ready(function () {
@@ -695,6 +754,7 @@
                 ]
             });
         });
+
     </script>
 
 </body>
