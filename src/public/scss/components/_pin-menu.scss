@@ -1,14 +1,13 @@
 // pin側選單
 
 .pin-menu-item {
-    position: sticky;
-    top: 80px;
     height: 400px;
 
     .pin-menu {
         list-style-type: none;
         padding: 0;
         margin: 0;
+        z-index: 1;
 
         .pin-menu-input {
             padding: 8px 0px;
@@ -27,15 +26,14 @@
 
 @media screen and (max-width: 767px) {
     .pin-menu-item {
-        top: 56px;
         height: auto;
-        background-color: $black-5;
-        padding: 8px 24px;
 
         .pin-menu {
             display: flex;
             white-space: nowrap;
             overflow-x: scroll;
+            background-color: $black-5;
+            padding: 8px 24px;
 
             .pin-menu-input {
                 padding: 4px 0px;

@@ -141,6 +141,11 @@
     transition: ease-in-out 200ms;
     cursor: pointer;
 
+    .icon {
+        width: 24px;
+        height: 24px;
+    }
+
     // 顯示時，用js控制
     &.show {
         opacity: 1;
