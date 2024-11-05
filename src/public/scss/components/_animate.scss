@@ -1,0 +1,25 @@
+// GSAP動畫設定
+
+// 圖片scale效果、圖片遮罩效果，超過的部分做裁切
+.images-cut {
+    overflow: hidden;
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+}
+
+/* 文字效果 */
+.textWrap {
+    overflow: hidden;
+    display: block;
+}
+
+/* 文字從下向上飛入 */
+.textUp {
+    display: block;
+}
+
+/* 文字從左向右飛入 */
+.textRight {
+    display: block;
+}

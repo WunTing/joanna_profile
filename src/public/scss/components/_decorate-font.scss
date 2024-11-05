@@ -1,33 +1,75 @@
 // 裝飾文字
 
-.decorate-font-left-straight.en-type-5.en-mobile-type-4 {
+// 直式小字 + 直式線條
+.decorate-font-left-straight {
     transform: rotate(90deg);
-    transform-origin: 0 24px;
+    transform-origin: -24px 40px;
     display: inline-block;
-    // position: relative;
+    color: $text-color-1;
 
     &::after {
         content: "";
         display: inline-block;
         height: 1px;
-        background-color: #141414;
+        background-color: $text-color-1;
         width: 120px;
         position: relative;
         margin: 2px 10px;
     }
+
+    &.white {
+        color: $text-color-5;
+
+        &::after {
+            background-color: $black-white ;
+        }
+    }
 }
 
-.decorate-font-right-horizontal.en-type-5.en-mobile-type-4 {
-    // display: inline-block;
-    // position: relative;
+// 橫式小字 + 橫線條（靠右）
+.decorate-font-right-horizontal {
+    color: $text-color-1;
     text-align: right;
 
-    &::after {
+    &::before {
         content: "";
         display: inline-block;
         height: 1px;
-        background-color: #141414;
-        width: 120px;
+        background-color: $text-color-1;
+        width: 40%;
         margin: 2px 10px;
+    }
+
+    &.white {
+        color: $text-color-5;
+
+        &::before {
+            background-color: $black-white ;
+        }
+    }
+}
+
+// 橫式小字 + 橫線條（靠左）
+.decorate-font-left-horizontal {
+    color: $text-color-1;
+    text-align: left;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        height: 1px;
+        background-color: $text-color-1;
+        width: 40%;
+        margin: 2px 10px;
+    }
+
+    &.white {
+        color: $text-color-5;
+
+        &::after {
+            background-color: $black-white ;
+        }
     }
 }

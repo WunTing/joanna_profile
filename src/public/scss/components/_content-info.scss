@@ -2,10 +2,11 @@
 
 .content-info {
     .info {
-        padding-bottom: 88px;
+        padding-bottom: 64px;
 
         // 有段落，外層包info-item
         .info-item {
+            padding-bottom: 24px;
 
             .info-text,
             .info-list {
@@ -148,6 +149,7 @@
 
             // 有段落，外層包info-item
             .info-item {
+                padding-bottom: 16px;
 
                 .info-text,
                 .info-list {
@@ -162,7 +164,6 @@
                 // 左右排版(用在灰色卡片)
                 &.flex {
                     flex-direction: column;
-                    gap: 0px;
                 }
             }
 

@@ -2,12 +2,48 @@
 
 // 以下共用區---------------------------------------------
 
+// 動畫效果共用設定
+@mixin abSize($pos, $size) {
+    top: $pos;
+    left: $pos;
+    right: $pos;
+    bottom: $pos;
+    width: $size;
+    height: $size;
+}
+
+@mixin transition($time) {
+    transition: $time;
+}
+
+
 // default按鈕基礎共用
 .btn-base {
     background-color: $primary-default;
     border-radius: $border-radius;
     color: $text-color-5;
     cursor: pointer;
+    padding: 9px 24px;
+    @include transition(200ms);
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+
+    &::before {
+        content: "";
+        position: absolute;
+        @include abSize(0, 100%);
+        @include transition(400ms);
+        background-color: $primary-dark;
+        transform: scaleX(0);
+        transform-origin: 0 50%;
+        z-index: -1;
+    }
+
+    .icon {
+        transform: translateX(0%);
+        @include transition(400ms);
+    }
 }
 
 
@@ -18,7 +54,15 @@
     }
 
     &:hover {
-        background-color: $primary-dark;
+        background-color: $primary-default;
+
+        &:before {
+            transform: scaleX(1);
+        }
+
+        .icon {
+            transform: translateX(10%);
+        }
     }
 
     &:focus {
@@ -30,6 +74,17 @@
 .btn-disable-base {
     background-color: $primary-tint;
     cursor: not-allowed;
+
+    &::before {
+        content: "";
+        position: static;
+        @include abSize(0, 0%);
+        @include transition(0ms);
+        background-color: $primary-tint;
+        transform: scaleX(0);
+        transform-origin: 0 0%;
+        z-index: 0;
+    }
 }
 
 // 以下按鈕個別設定---------------------------------------------
@@ -38,7 +93,6 @@
 .btn-default-lg {
     @extend .btn-base;
     @extend .btn-state-base;
-    padding: 9px 24px;
 
     // disable狀態
     &.disable {
