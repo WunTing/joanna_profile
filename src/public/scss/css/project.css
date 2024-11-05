@@ -329,6 +329,10 @@ button {
   transition: ease-in-out 200ms;
   cursor: pointer;
 }
+.go-top-button .icon {
+  width: 24px;
+  height: 24px;
+}
 .go-top-button.show {
   opacity: 1;
   visibility: visible;
@@ -799,14 +803,13 @@ button {
   }
 }
 .pin-menu-item {
-  position: sticky;
-  top: 80px;
   height: 400px;
 }
 .pin-menu-item .pin-menu {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  z-index: 1;
 }
 .pin-menu-item .pin-menu .pin-menu-input {
   padding: 8px 0px;
@@ -821,15 +824,14 @@ button {
 
 @media screen and (max-width: 767px) {
   .pin-menu-item {
-    top: 56px;
     height: auto;
-    background-color: #F7F7F7;
-    padding: 8px 24px;
   }
   .pin-menu-item .pin-menu {
     display: flex;
     white-space: nowrap;
     overflow-x: scroll;
+    background-color: #F7F7F7;
+    padding: 8px 24px;
   }
   .pin-menu-item .pin-menu .pin-menu-input {
     padding: 4px 0px;

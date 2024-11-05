@@ -330,6 +330,10 @@ button {
   transition: ease-in-out 200ms;
   cursor: pointer;
 }
+.go-top-button .icon {
+  width: 24px;
+  height: 24px;
+}
 .go-top-button.show {
   opacity: 1;
   visibility: visible;
