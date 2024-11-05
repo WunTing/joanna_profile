@@ -1,0 +1,282 @@
+//about頁面樣式
+
+// 背景
+.about-background {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/about/about-background-1920x1080.png") top center no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+// 簡介
+.about-content {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    // overflow: scroll;
+
+    .introduction {
+        display: flex;
+        gap: 47px;
+        color: $text-color-5;
+        margin: 64px auto 80px auto;
+
+        // 照片
+        .introduction-photo {
+            margin-left: 40px;
+
+            .photo {
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+
+        // 簡介文字
+        .introduction-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .tit {
+                margin-top: 36px;
+                margin-bottom: 24px;
+            }
+
+            .content {
+                padding-right: 160px;
+                padding-bottom: 30px;
+            }
+        }
+    }
+}
+
+// 簡介段落背景
+.introduction-part {
+    .introduction-part-background {
+        position: relative;
+
+        &::before {
+            content: '';
+            width: 80vw;
+            background-color: rgba($color: #ffffff, $alpha: 0.25);
+            display: inline-block;
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+        }
+
+        &:nth-child(even)::before {
+            background-color: rgba($color: #ffffff, $alpha: 0.10);
+        }
+    }
+}
+
+// 簡介段落內容
+.introduction-part-container {
+    display: flex;
+    padding: 32px 0px;
+    gap: 32px;
+
+    &:last-child {
+        padding-bottom: 57px;
+    }
+
+    // 標題
+    .introduction-part-title {
+        width: 20vw;
+        position: sticky;
+        top: 80px;
+        left: 0;
+        height: 100%;
+
+        .decorate-font-left-horizontal::after {
+            width: calc(100% - 64px);
+        }
+
+        .section-title-short {
+            color: $text-color-5;
+        }
+    }
+
+    // 內容
+    .introduction-part-info {
+        width: 80vw;
+        border-radius: $border-radius;
+        background-color: $black-white;
+        padding: 40px;
+
+        .info-title {
+            color: $secondary-default;
+            padding-bottom: 4px;
+        }
+
+        .info-text {
+            color: $text-color-1;
+            margin: 0;
+            padding: 4px 0px;
+        }
+
+        .info-text-list {
+            padding-left: 1em;
+        }
+
+        .info-img {
+            width: 60px;
+            height: 60px;
+            margin-left: 30px;
+            object-fit: contain;
+            border: 1px solid $black-10;
+        }
+
+        .timeline-container {
+            border-left: 1px solid $black-10;
+            height: auto;
+            position: relative;
+            left: 0.5em;
+            padding-bottom: 32px;
+            display: flex;
+            gap: 24px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: -7px;
+                width: 14px;
+                height: 14px;
+                border-radius: 100%;
+                background-color: $secondary-default;
+            }
+
+            &:last-child {
+                border-left: 0;
+                padding-bottom: 0;
+            }
+        }
+
+
+    }
+
+}
+
+@media screen and (max-width: 1199px) {
+
+    // 簡介段落內容
+    .introduction-part-container {
+        display: flex;
+        padding: 32px 24px;
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+
+    // 簡介
+    .about-content {
+        .introduction {
+
+            // 照片
+            .introduction-photo {
+                flex: 1;
+            }
+
+            // 簡介文字
+            .introduction-info {
+                flex: 2;
+
+                .content {
+                    padding-right: 0px;
+                }
+            }
+        }
+    }
+
+    // 簡介段落背景
+    .introduction-part {
+        .introduction-part-background {
+            &::before {
+                width: 85vw;
+            }
+        }
+    }
+
+    // 簡介段落內容
+    .introduction-part-container {
+        flex-direction: column;
+        padding: 20px 24px;
+        gap: 18px;
+
+        // 標題
+        .introduction-part-title {
+            width: 100%;
+            position: static;
+            padding-bottom: 0;
+        }
+
+        // 內容
+        .introduction-part-info {
+            width: auto;
+            padding: 20px;
+
+            .info-img {
+                width: 34px;
+                height: 34px;
+                margin-left: 16px;
+            }
+
+            .timeline-container {
+                gap: 16px;
+
+                &::before {
+                    left: -5px;
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    // 背景
+    .about-background {
+        top: 56px;
+    }
+
+    // 簡介
+    .about-content {
+        .introduction {
+            flex-direction: column;
+            gap: 20px;
+
+            // 簡介文字
+            .introduction-info {
+                flex-direction: column-reverse;
+
+                .tit {
+                    margin-top: 32px;
+                    margin-bottom: 20px;
+                }
+            }
+
+        }
+    }
+
+    // 簡介段落內容
+    .introduction-part-container {
+
+        // 標題
+        .introduction-part-title {
+
+            .decorate-font-left-horizontal::after {
+                width: calc(100% - 48px);
+            }
+        }
+
+    }
+}

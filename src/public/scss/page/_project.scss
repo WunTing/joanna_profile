@@ -1,9 +1,9 @@
-//product頁面樣式
+//project頁面樣式
 
 
 .product {
     position: relative;
-    margin-bottom: 80px;
+    margin-bottom: 105px;
 
     // banner
     .product-banner-img {
@@ -45,6 +45,7 @@
     position: relative;
     border-radius: 25px 25px 0px 0px;
     background-color: $black-white;
+    overflow: hidden;
 
     .content-info-block {
         display: flex;
