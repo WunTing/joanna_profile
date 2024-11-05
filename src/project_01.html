@@ -610,7 +610,7 @@
 
     <!-- go top button -->
     <button id="goTopButton" class="go-top-button">
-        <img src="../src/public/scss/images/icon/go-top-button.svg" alt="">
+        <img class="icon" src="../src/public/scss/images/icon/go-top-button.svg" alt="">
     </button>
 
 
@@ -630,29 +630,33 @@
     <script src="../src/JS/go-top-button.js"></script>
 
     <script>
-        //M版漢堡按鈕，點擊出現選單
+        // M版漢堡按鈕，點擊出現選單
         $(".header .ham-menu-btn").click(function (e) {
             $(this).parents(".header").find(".header-list-mobile").toggleClass("active");
             $(".header-list-mobile").fadeIn("fast");
             document.body.finds('#no-scroll').classList.add('no-scroll');//選單打開時，body禁止滾動
         });
-        //M版漢堡按鈕，點擊關閉按鈕，關閉選單
+        // M版漢堡按鈕，點擊關閉按鈕，關閉選單
         $(".header-list-mobile .close-btn").click(function (e) {
             $(this).parent(".header-list-mobile").hide();
             document.body.finds('#no-scroll').classList.remove('no-scroll');//選單打開時，body禁止滾動
         });
 
+
+
         // GSAP動畫js設定
         gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
-        // 動畫-開場
+
+        // 1.動畫-開場
         // gsap.set("#opening", { scale: 0.7 })
         gsap.timeline().from("#opening", { duration: 0.5, opacity: 0 })
             .from("#openingTit", { duration: 0.5, opacity: 0, x: -24, ease: "power1.in" })
             .from("#pointCard", { opacity: 0, y: -20, ease: "power1.in" })
             .from(".content-info-block", { opacity: 0, ease: "power1.in" });
 
-        // 動畫-段落飛入
+
+        // 2.動畫-段落飛入
         gsap.utils.toArray(".fade-in-animate").forEach(function (infoFadeIn) {
             gsap.set(infoFadeIn, {
                 opacity: 0,
@@ -676,8 +680,37 @@
         });
 
 
+        // 3.pin側選單（必須用GSAP控制pin住，用position: sticky;會失效）
+        const mm = gsap.matchMedia();
+        // 767以上
+        gsap.matchMedia().add("(min-width: 768px)", () => {
+            gsap.to(".pin-menu", {
+                scrollTrigger: {
+                    trigger: ".pin-menu",
+                    start: "top 80px", // 當.pin-menu到達視窗頂端
+                    endTrigger: ".content-info", // 固定持續到.content-info的結束
+                    end: "bottom bottom",
+                    pin: true, // 將元素固定
+                    pinSpacing: false,
+                }
+            });
+        });
+        // 767以下
+        gsap.matchMedia().add("(max-width: 767px)", () => {
+            gsap.to(".pin-menu", {
+                scrollTrigger: {
+                    trigger: ".pin-menu",
+                    start: "top 56px", // 當 .pin-menu 到達視窗頂端
+                    endTrigger: ".content-info", // 固定持續到 .content-info 的結束
+                    end: "bottom 160px",
+                    pin: true, // 將元素固定
+                    pinSpacing: false,
+                }
+            });
+        });
 
-        // pin測選單，滾動監聽
+
+        // pin側選單，滾動監聽
         // $(document).ready(function () {
         //     var sectionIds = $('.pin-menu').find('.pin-menu-input').find('a.input');
 
@@ -700,7 +733,6 @@
         //         });
         //     });
         // });
-
         $(document).ready(function () {
             var sectionIds = $('.pin-menu').find('.pin-menu-input').find('a.input');
 
@@ -733,6 +765,7 @@
                 });
             });
         });
+
 
         // slick輪播
         $(document).ready(function () {
