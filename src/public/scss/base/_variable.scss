@@ -1,10 +1,11 @@
 //基礎設定
 
 // 字體 --------------------------------------
-$font-family: "Mulish", sans-serif, Arial, "Microsoft JhengHei", "Helvetica Neue", Helvetica;
+$font-family: "Mulish", "Noto Sans TC", sans-serif, Arial, "Microsoft JhengHei", "Helvetica Neue", Helvetica;
 
-// google font字體引入 字體為：Mulish
+// google font字體引入 字體為：Mulish、Noto Sans TC思源黑體
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
 
 * {
     font-family: $font-family;
@@ -61,7 +62,7 @@ $primary-tint: #CCCCCC;
 
 // 輔助色
 $secondary-default: #264480;
-$secondary-tint: #CBD0D8;
+$secondary-tint: #d3dce9;
 
 // 強調色
 $accent-default: #D3AC2B;
@@ -114,66 +115,77 @@ $box-shadow-s: 0px 2px 8px rgba($color: #000000, $alpha: 0.4);
     font-size: 40px;
     font-weight: bold;
     line-height: 125%;
+    letter-spacing: .6px;
 }
 
 .tit-type-2 {
     font-size: 32px;
     font-weight: bold;
     line-height: 125%;
+    letter-spacing: .6px;
 }
 
 .tit-type-3 {
     font-size: 26px;
     font-weight: bold;
     line-height: 125%;
+    letter-spacing: .6px;
 }
 
 .tit-type-4 {
     font-size: 20px;
     font-weight: bold;
     line-height: 160%;
+    letter-spacing: .2px;
 }
 
 .tit-type-5 {
     font-size: 18px;
     font-weight: bold;
     line-height: 160%;
+    letter-spacing: .2px;
 }
 
 .tit-type-6 {
     font-size: 16px;
     font-weight: bold;
     line-height: 160%;
+    letter-spacing: .2px;
 }
 
 .subtitle {
     font-size: 14px;
     font-weight: bold;
     line-height: 160%;
+    letter-spacing: .2px;
 }
 
 .body-type-1 {
     font-size: 16px;
     font-weight: normal;
     line-height: 160%;
+    letter-spacing: .2px;
 }
 
 .body-type-2 {
     font-size: 14px;
     font-weight: normal;
     line-height: 160%;
+    letter-spacing: .2px;
 }
 
 .remark {
     font-size: 12px;
     font-weight: normal;
     line-height: 140%;
+    letter-spacing: .2px;
 }
 
 .small {
     font-size: 11px;
     font-weight: normal;
     line-height: 140%;
+    letter-spacing: .2px;
 }
 
 
@@ -182,18 +194,21 @@ $box-shadow-s: 0px 2px 8px rgba($color: #000000, $alpha: 0.4);
     font-size: 16px;
     font-weight: bold;
     line-height: 160%;
+    letter-spacing: .2px;
 }
 
 .btn-md {
     font-size: 14px;
     font-weight: bold;
     line-height: 140%;
+    letter-spacing: .2px;
 }
 
 .btn-sm {
     font-size: 12px;
     font-weight: bold;
     line-height: 120%;
+    letter-spacing: .2px;
 }
 
 
@@ -236,48 +251,56 @@ $box-shadow-s: 0px 2px 8px rgba($color: #000000, $alpha: 0.4);
         font-size: 26px;
         font-weight: bold;
         line-height: 125%;
+        letter-spacing: .6px;
     }
 
     .tit-mobile-type-2 {
         font-size: 20px;
         font-weight: bold;
         line-height: 160%;
+        letter-spacing: .2px;
     }
 
     .tit-mobile-type-3 {
         font-size: 18px;
         font-weight: bold;
         line-height: 160%;
+        letter-spacing: .2px;
     }
 
     .subtitle-mobile-type-1 {
         font-size: 16px;
         font-weight: bold;
         line-height: 160%;
+        letter-spacing: .2px;
     }
 
     .subtitle-mobile-type-2 {
         font-size: 16px;
         font-weight: normal;
         line-height: 160%;
+        letter-spacing: .2px;
     }
 
     .body-mobile-type-1 {
         font-size: 14px;
         font-weight: bold;
         line-height: 160%;
+        letter-spacing: .2px;
     }
 
     .body-mobile-type-2 {
         font-size: 14px;
         font-weight: normal;
         line-height: 160%;
+        letter-spacing: .2px;
     }
 
     // 按鈕字級 --------------------------------------
     .btn-lg {
         font-size: 14px;
         line-height: 140%;
+        letter-spacing: .2px;
     }
 
     // 英文字級 手機 --------------------------------------
