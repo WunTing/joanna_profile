@@ -2,16 +2,19 @@
 
 
 // 開場文字
-.opening-font {
-    padding: 10vh 8%;
+.index-content {
 
-    .en-type-1.en-mobile-type-1 {
-        padding-bottom: 40px;
+    .opening-font {
+        padding: 10vh 8%;
+
+        .en-type-1.en-mobile-type-1 {
+            padding-bottom: 40px;
+        }
     }
-}
 
-.section-title {
-    color: $text-color-1;
+    .section-title {
+        color: $text-color-1;
+    }
 }
 
 
