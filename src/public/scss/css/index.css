@@ -680,14 +680,13 @@ button {
   display: block;
 }
 
-.opening-font {
+.index-content .opening-font {
   padding: 10vh 8%;
 }
-.opening-font .en-type-1.en-mobile-type-1 {
+.index-content .opening-font .en-type-1.en-mobile-type-1 {
   padding-bottom: 40px;
 }
-
-.section-title {
+.index-content .section-title {
   color: #141414;
 }
 
