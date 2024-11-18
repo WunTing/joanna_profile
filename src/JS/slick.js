@@ -4,8 +4,8 @@ $(document).ready(function () {
         dots: true,
         slidesToShow: 3,
         slidesToScroll: 1,
-        initialSlide: 1, // 從第三張幻燈片開始（索引從 0 開始，所以 1 表示第二張）
-        autoplay: true,
+        initialSlide: 0, // 從第三張幻燈片開始（索引從 0 開始，所以 1 表示第二張）
+        // autoplay: true,
         autoplaySpeed: 4000,
         prevArrow: '<button type="button" class="custom-prev-arrow"></button>',//自定義箭頭
         nextArrow: '<button type="button" class="custom-next-arrow"></button>',//自定義箭頭
