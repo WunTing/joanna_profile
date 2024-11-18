@@ -37,247 +37,239 @@
 </head>
 
 <body>
-    <!-- loading -->
-    <div id="loading" class="loading-bg">
-        <img class="loading-img" src="../src/public/scss/images/loading/loading.gif" alt="">
-    </div>
+    <!-- 背景圖片 -->
+    <div class="about-background"></div>
 
-    <div id="content">
-        <!-- 背景圖片 -->
-        <div class="about-background"></div>
+    <div class="about-content">
+        <!-- header引入 -->
+        <div class="headerpage"></div>
 
-        <div class="about-content">
-            <!-- header引入 -->
-            <div class="headerpage"></div>
-
-            <!-- 主要內容區塊 -->
-            <main>
-                <!-- 簡介 -->
-                <section class="container">
-                    <!-- Welcome to my profile 裝飾文字 -->
-                    <div id="decorateFontLeftStraight">
-                        <div class="decorate-font-left-straight white en-type-5 en-mobile-type-4">
-                            Welcome to my profile
+        <!-- 主要內容區塊 -->
+        <main>
+            <!-- 簡介 -->
+            <section class="container">
+                <!-- Welcome to my profile 裝飾文字 -->
+                <div id="decorateFontLeftStraight">
+                    <div class="decorate-font-left-straight white en-type-5 en-mobile-type-4">
+                        Welcome to my profile
+                    </div>
+                </div>
+                <div id="opening" class="introduction">
+                    <div class="introduction-photo">
+                        <div id="openingImg">
+                            <img class="photo" src="../src/public/scss/images/about/photo.png" alt="">
                         </div>
                     </div>
-                    <div id="opening" class="introduction">
-                        <div class="introduction-photo">
-                            <div id="openingImg">
-                                <img class="photo" src="../src/public/scss/images/about/photo.png" alt="">
+                    <div class="introduction-info">
+                        <div id="openingTit" class="info">
+                            <h2 class="tit en-type-2 en-mobile-type-1">
+                                About
+                                <br>
+                                Joanna Chen
+                            </h2>
+                            <h1 class="content body-type-1 body-mobile-type-2">
+                                我是一位UI/UX 設計師，擁有五年的實作經驗，曾在旅遊、教育領域做服務，目前仍不斷地在學習新的知識，將其應用到工作的專案中。
+                                <br>
+                                <br>
+                                我專注傾聽使用者的需求以及確認商業需求目標，再發揮創意思考，並提出有效的設計解決方案，讓產品增加更多的價值。
+                            </h1>
+                        </div>
+                        <!-- 2024 裝飾文字 -->
+                        <div id="decorateFontRightHorizontal">
+                            <div class="decorate-font-right-horizontal white en-type-5 en-mobile-type-4">
+                                2024
                             </div>
                         </div>
-                        <div class="introduction-info">
-                            <div id="openingTit" class="info">
-                                <h2 class="tit en-type-2 en-mobile-type-1">
-                                    About
-                                    <br>
-                                    Joanna Chen
-                                </h2>
-                                <h1 class="content body-type-1 body-mobile-type-2">
-                                    我是一位UI/UX 設計師，擁有五年的實作經驗，曾在旅遊、教育領域做服務，目前仍不斷地在學習新的知識，將其應用到工作的專案中。
-                                    <br>
-                                    <br>
-                                    我專注傾聽使用者的需求以及確認商業需求目標，再發揮創意思考，並提出有效的設計解決方案，讓產品增加更多的價值。
-                                </h1>
-                            </div>
-                            <!-- 2024 裝飾文字 -->
-                            <div id="decorateFontRightHorizontal">
-                                <div class="decorate-font-right-horizontal white en-type-5 en-mobile-type-4">
-                                    2024
-                                </div>
-                            </div>
-                        </div>
+                    </div>
 
+                </div>
+            </section>
+
+            <!-- 段落內容區塊 -->
+            <div class="introduction-part">
+                <!-- 01 段落背景 -->
+                <section class="introduction-part-background">
+                    <!-- 段落內容 -->
+                    <div class="container introduction-part-container">
+                        <!-- 標題 -->
+                        <div class="introduction-part-title">
+                            <div class="decorate-font-left-horizontal white en-type-2 en-mobile-type-2">
+                                01
+                            </div>
+                            <h3 class="section-title-short text-left tit-type-3">
+                                SKILLS
+                                <br>
+                                我的技能
+                            </h3>
+                        </div>
+                        <!-- 內容 -->
+                        <div class="introduction-part-info">
+                            <h4 class="info-title tit-type-5 subtitle-mobile-type-1">
+                                技術類
+                            </h4>
+                            <ul class="info-text info-text-list">
+                                <li class="tit-type-6 body-mobile-type-1">使用者介面設計</li>
+                                <li class="tit-type-6 body-mobile-type-1">互動/動態設計</li>
+                                <li class="tit-type-6 body-mobile-type-1">設計系統</li>
+                                <li class="tit-type-6 body-mobile-type-1">色彩調配設計</li>
+                                <li class="tit-type-6 body-mobile-type-1">網頁前端技術</li>
+                                <li class="tit-type-6 body-mobile-type-1">使用者研究與測試</li>
+                            </ul>
+                            <!-- 分隔線 -->
+                            <div class="divider-line">
+                                <div class="line"></div>
+                            </div>
+                            <h4 class="info-title tit-type-5 subtitle-mobile-type-1">
+                                軟體類
+                            </h4>
+                            <ul class="info-text info-text-list">
+                                <li class="tit-type-6 body-mobile-type-1">Figma</li>
+                                <li class="tit-type-6 body-mobile-type-1">HTML/CSS</li>
+                                <li class="tit-type-6 body-mobile-type-1">SASS/SCSS</li>
+                                <li class="tit-type-6 body-mobile-type-1">Adobe Photoshop</li>
+                                <li class="tit-type-6 body-mobile-type-1">Adobe Illustrator</li>
+                                <li class="tit-type-6 body-mobile-type-1">Visual Studio Code</li>
+                                <li class="tit-type-6 body-mobile-type-1">Bootstrap</li>
+                                <li class="tit-type-6 body-mobile-type-1">jQuery</li>
+                            </ul>
+                        </div>
                     </div>
                 </section>
 
-                <!-- 段落內容區塊 -->
-                <div class="introduction-part">
-                    <!-- 01 段落背景 -->
-                    <section class="introduction-part-background">
-                        <!-- 段落內容 -->
-                        <div class="container introduction-part-container">
-                            <!-- 標題 -->
-                            <div class="introduction-part-title">
-                                <div class="decorate-font-left-horizontal white en-type-2 en-mobile-type-2">
-                                    01
-                                </div>
-                                <h3 class="section-title-short text-left tit-type-3">
-                                    SKILLS
-                                    <br>
-                                    我的技能
-                                </h3>
+                <!-- 02 段落背景 -->
+                <section class="introduction-part-background">
+                    <!-- 段落內容 -->
+                    <div class="container introduction-part-container">
+                        <!-- 標題 -->
+                        <div class="introduction-part-title">
+                            <div class="decorate-font-left-horizontal white en-type-2 en-mobile-type-2">
+                                02
                             </div>
-                            <!-- 內容 -->
-                            <div class="introduction-part-info">
-                                <h4 class="info-title tit-type-5 subtitle-mobile-type-1">
-                                    技術類
-                                </h4>
-                                <ul class="info-text info-text-list">
-                                    <li class="tit-type-6 body-mobile-type-1">使用者介面設計</li>
-                                    <li class="tit-type-6 body-mobile-type-1">互動/動態設計</li>
-                                    <li class="tit-type-6 body-mobile-type-1">設計系統</li>
-                                    <li class="tit-type-6 body-mobile-type-1">色彩調配設計</li>
-                                    <li class="tit-type-6 body-mobile-type-1">網頁前端技術</li>
-                                    <li class="tit-type-6 body-mobile-type-1">使用者研究與測試</li>
-                                </ul>
-                                <!-- 分隔線 -->
-                                <div class="divider-line">
-                                    <div class="line"></div>
-                                </div>
-                                <h4 class="info-title tit-type-5 subtitle-mobile-type-1">
-                                    軟體類
-                                </h4>
-                                <ul class="info-text info-text-list">
-                                    <li class="tit-type-6 body-mobile-type-1">Figma</li>
-                                    <li class="tit-type-6 body-mobile-type-1">HTML/CSS</li>
-                                    <li class="tit-type-6 body-mobile-type-1">SASS/SCSS</li>
-                                    <li class="tit-type-6 body-mobile-type-1">Adobe Photoshop</li>
-                                    <li class="tit-type-6 body-mobile-type-1">Adobe Illustrator</li>
-                                    <li class="tit-type-6 body-mobile-type-1">Visual Studio Code</li>
-                                    <li class="tit-type-6 body-mobile-type-1">Bootstrap</li>
-                                    <li class="tit-type-6 body-mobile-type-1">jQuery</li>
-                                </ul>
-                            </div>
+                            <h3 class="section-title-short text-left tit-type-3">
+                                EDUCATION
+                                <br>
+                                學歷與語言
+                            </h3>
                         </div>
-                    </section>
-
-                    <!-- 02 段落背景 -->
-                    <section class="introduction-part-background">
-                        <!-- 段落內容 -->
-                        <div class="container introduction-part-container">
-                            <!-- 標題 -->
-                            <div class="introduction-part-title">
-                                <div class="decorate-font-left-horizontal white en-type-2 en-mobile-type-2">
-                                    02
-                                </div>
-                                <h3 class="section-title-short text-left tit-type-3">
-                                    EDUCATION
-                                    <br>
-                                    學歷與語言
-                                </h3>
+                        <!-- 內容 -->
+                        <div class="introduction-part-info fade-in-animate">
+                            <h4 class="info-title tit-type-5 subtitle-mobile-type-1">
+                                學歷
+                            </h4>
+                            <p class="info-text tit-type-6 body-mobile-type-1">
+                                私立景文科技大學
+                                <br>
+                                視覺傳達設計系 四技畢業
+                            </p>
+                            <!-- 分隔線 -->
+                            <div class="divider-line">
+                                <div class="line"></div>
                             </div>
-                            <!-- 內容 -->
-                            <div class="introduction-part-info fade-in-animate">
-                                <h4 class="info-title tit-type-5 subtitle-mobile-type-1">
-                                    學歷
-                                </h4>
-                                <p class="info-text tit-type-6 body-mobile-type-1">
-                                    私立景文科技大學
-                                    <br>
-                                    視覺傳達設計系 四技畢業
-                                </p>
-                                <!-- 分隔線 -->
-                                <div class="divider-line">
-                                    <div class="line"></div>
-                                </div>
-                                <h4 class="info-title tit-type-5 subtitle-mobile-type-1">
-                                    語言
-                                </h4>
-                                <ul class="info-text info-text-list">
-                                    <li class="tit-type-6 body-mobile-type-1">中文-精通</li>
-                                    <li class="tit-type-6 body-mobile-type-1">英文-略懂</li>
-                                </ul>
-                            </div>
+                            <h4 class="info-title tit-type-5 subtitle-mobile-type-1">
+                                語言
+                            </h4>
+                            <ul class="info-text info-text-list">
+                                <li class="tit-type-6 body-mobile-type-1">中文-精通</li>
+                                <li class="tit-type-6 body-mobile-type-1">英文-略懂</li>
+                            </ul>
                         </div>
-                    </section>
+                    </div>
+                </section>
 
-                    <!-- 03 段落背景 -->
-                    <section class="introduction-part-background">
-                        <!-- 段落內容 -->
-                        <div class="container introduction-part-container">
-                            <!-- 標題 -->
-                            <div class="introduction-part-title">
-                                <div class="decorate-font-left-horizontal white en-type-2 en-mobile-type-2">
-                                    03
-                                </div>
-                                <h3 class="section-title-short text-left tit-type-3">
-                                    EXPERIENCE
-                                    <br>
-                                    工作經歷
-                                </h3>
+                <!-- 03 段落背景 -->
+                <section class="introduction-part-background">
+                    <!-- 段落內容 -->
+                    <div class="container introduction-part-container">
+                        <!-- 標題 -->
+                        <div class="introduction-part-title">
+                            <div class="decorate-font-left-horizontal white en-type-2 en-mobile-type-2">
+                                03
                             </div>
-                            <!-- 內容 -->
-                            <div class="introduction-part-info fade-in-animate">
-                                <div class="timeline-container">
-                                    <div>
-                                        <img class="info-img" src="../src/public/scss/images/about/my-logo@x2.png"
-                                            alt="">
-                                    </div>
-                                    <div>
-                                        <h4 class="info-title tit-type-5 subtitle-mobile-type-1">
-                                            團隊接案＆設計進修
-                                        </h4>
-                                        <p class="info-text tit-type-6 body-mobile-type-1">
-                                            2023年11月 - Now
-                                            <br>
-                                            UI/UX 設計師
-                                        </p>
-                                        <p class="info-text body-type-1 body-mobile-type-2">
-                                            建立工作室團隊接案，目前正在進行幼教聯絡APP。我負責UI/UX design、程式碼樣式維護和整理、品牌視覺形象設計，
-                                            接案之餘接外包網頁設計，參加線上和實體課程進修學習，增進UI/UX知識。
-                                        </p>
-                                    </div>
+                            <h3 class="section-title-short text-left tit-type-3">
+                                EXPERIENCE
+                                <br>
+                                工作經歷
+                            </h3>
+                        </div>
+                        <!-- 內容 -->
+                        <div class="introduction-part-info fade-in-animate">
+                            <div class="timeline-container">
+                                <div>
+                                    <img class="info-img" src="../src/public/scss/images/about/my-logo@x2.png" alt="">
                                 </div>
-                                <div class="timeline-container">
-                                    <div>
-                                        <img class="info-img" src="../src/public/scss/images/about/settour-logo@x2.png"
-                                            alt="">
-                                    </div>
-                                    <div>
-                                        <h4 class="info-title tit-type-5 subtitle-mobile-type-1">
-                                            東南旅遊
-                                        </h4>
-                                        <p class="info-text tit-type-6 body-mobile-type-1">
-                                            2019年5月 - 2023年10月
-                                            <br>
-                                            UI/UX 設計師
-                                        </p>
-                                        <p class="info-text body-type-1 body-mobile-type-2">
-                                            負責 UI/UX design，產品有共有B2C、B2B、B2E三個通，把舊版網站翻新改版成具有響應式網站設計（RWD），建立和維護Design
-                                            Guideline，並執行畫面的HTML切版，切版元素做元件化處理以利提高開發效率以及提升網站效能。開發過程會與工程師進行合作，從開發前的討論到測試上線。
-                                        </p>
-                                    </div>
+                                <div>
+                                    <h4 class="info-title tit-type-5 subtitle-mobile-type-1">
+                                        團隊接案＆設計進修
+                                    </h4>
+                                    <p class="info-text tit-type-6 body-mobile-type-1">
+                                        2023年11月 - Now
+                                        <br>
+                                        UI/UX 設計師
+                                    </p>
+                                    <p class="info-text body-type-1 body-mobile-type-2">
+                                        建立工作室團隊接案，目前正在進行幼教聯絡APP。我負責UI/UX design、程式碼樣式維護和整理、品牌視覺形象設計，
+                                        接案之餘接外包網頁設計，參加線上和實體課程進修學習，增進UI/UX知識。
+                                    </p>
                                 </div>
-                                <div class="timeline-container">
-                                    <div>
-                                        <img class="info-img" src="../src/public/scss/images/about/資策會-logo@x2.png"
-                                            alt="">
-                                    </div>
-                                    <div>
-                                        <h4 class="info-title tit-type-5 subtitle-mobile-type-1">
-                                            個人接案＆資策會進修
-                                        </h4>
-                                        <p class="info-text tit-type-6 body-mobile-type-1">
-                                            2018年9月 - 2019年2月
-                                            <br>
-                                            平面設計師
-                                        </p>
-                                        <p class="info-text body-type-1 body-mobile-type-2">
-                                            為了進一步學習UI/UX設計，參與資策會的UI/UX設計進修課程，扎實的設計實作和程式撰寫的能力，提升自我能力、獲得新知，這讓我感到開心和興奮，讓我更有信心能夠克服困難和挑戰。
-                                        </p>
-                                    </div>
+                            </div>
+                            <div class="timeline-container">
+                                <div>
+                                    <img class="info-img" src="../src/public/scss/images/about/settour-logo@x2.png"
+                                        alt="">
                                 </div>
-                                <div class="timeline-container">
-                                    <div>
-                                        <img class="info-img"
-                                            src="../src/public/scss/images/about/storyteller-logo@x2.png" alt="">
-                                    </div>
-                                    <div>
-                                        <h4 class="info-title tit-type-5 subtitle-mobile-type-1">
-                                            投圓文化有限公司-北投說書人&政府標案
-                                        </h4>
-                                        <p class="info-text tit-type-6 body-mobile-type-1">
-                                            2016年6月 - 2018年8月
-                                            <br>
-                                            平面設計師
-                                        </p>
-                                        <p class="info-text body-type-1 body-mobile-type-2">
-                                            負責視覺設計，包含CIS設計、排版、插畫、各種平面宣傳品、網站設計、印前製成。另外有接觸政府標案，活動視覺整合與設計、展覽設計。
-                                        </p>
-                                    </div>
+                                <div>
+                                    <h4 class="info-title tit-type-5 subtitle-mobile-type-1">
+                                        東南旅遊
+                                    </h4>
+                                    <p class="info-text tit-type-6 body-mobile-type-1">
+                                        2019年5月 - 2023年10月
+                                        <br>
+                                        UI/UX 設計師
+                                    </p>
+                                    <p class="info-text body-type-1 body-mobile-type-2">
+                                        負責 UI/UX design，產品有共有B2C、B2B、B2E三個通，把舊版網站翻新改版成具有響應式網站設計（RWD），建立和維護Design
+                                        Guideline，並執行畫面的HTML切版，切版元素做元件化處理以利提高開發效率以及提升網站效能。開發過程會與工程師進行合作，從開發前的討論到測試上線。
+                                    </p>
                                 </div>
-                                <!-- <div class="timeline-container">
+                            </div>
+                            <div class="timeline-container">
+                                <div>
+                                    <img class="info-img" src="../src/public/scss/images/about/資策會-logo@x2.png" alt="">
+                                </div>
+                                <div>
+                                    <h4 class="info-title tit-type-5 subtitle-mobile-type-1">
+                                        個人接案＆資策會進修
+                                    </h4>
+                                    <p class="info-text tit-type-6 body-mobile-type-1">
+                                        2018年9月 - 2019年2月
+                                        <br>
+                                        平面設計師
+                                    </p>
+                                    <p class="info-text body-type-1 body-mobile-type-2">
+                                        為了進一步學習UI/UX設計，參與資策會的UI/UX設計進修課程，扎實的設計實作和程式撰寫的能力，提升自我能力、獲得新知，這讓我感到開心和興奮，讓我更有信心能夠克服困難和挑戰。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline-container">
+                                <div>
+                                    <img class="info-img" src="../src/public/scss/images/about/storyteller-logo@x2.png"
+                                        alt="">
+                                </div>
+                                <div>
+                                    <h4 class="info-title tit-type-5 subtitle-mobile-type-1">
+                                        投圓文化有限公司-北投說書人&政府標案
+                                    </h4>
+                                    <p class="info-text tit-type-6 body-mobile-type-1">
+                                        2016年6月 - 2018年8月
+                                        <br>
+                                        平面設計師
+                                    </p>
+                                    <p class="info-text body-type-1 body-mobile-type-2">
+                                        負責視覺設計，包含CIS設計、排版、插畫、各種平面宣傳品、網站設計、印前製成。另外有接觸政府標案，活動視覺整合與設計、展覽設計。
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- <div class="timeline-container">
                                 <div>
                                     <img class="info-img" src="../src/public/scss/images/about/etuoh-logo@x2.png"
                                         alt="">
@@ -296,59 +288,58 @@
                                     </p>
                                 </div>
                             </div> -->
-                            </div>
                         </div>
-                    </section>
+                    </div>
+                </section>
 
-                    <!-- 04 段落背景 -->
-                    <section class="introduction-part-background">
-                        <!-- 段落內容 -->
-                        <div class="container introduction-part-container">
-                            <!-- 標題 -->
-                            <div class="introduction-part-title">
-                                <div class="decorate-font-left-horizontal white en-type-2 en-mobile-type-2">
-                                    04
-                                </div>
-                                <h3 class="section-title-short text-left tit-type-3">
-                                    My values
-                                    <br>
-                                    我的價值觀
-                                </h3>
+                <!-- 04 段落背景 -->
+                <section class="introduction-part-background">
+                    <!-- 段落內容 -->
+                    <div class="container introduction-part-container">
+                        <!-- 標題 -->
+                        <div class="introduction-part-title">
+                            <div class="decorate-font-left-horizontal white en-type-2 en-mobile-type-2">
+                                04
                             </div>
-                            <!-- 內容 -->
-                            <div class="introduction-part-info fade-in-animate">
-                                <h4 class="info-title tit-type-5 subtitle-mobile-type-1">
-                                    團隊合作
-                                </h4>
-                                <p class="info-text body-type-1 body-mobile-type-2">
-                                    我重視團隊的合作，在與不同的工作者協作的時候，保持開放的心去傾聽、理解、溝通，互相協調之下尋找到最好的答案，一個成功的作品是來自一整個團隊努力所換來的成果。
-                                </p>
-                                <!-- 分隔線 -->
-                                <div class="divider-line">
-                                    <div class="line"></div>
-                                </div>
-                                <h4 class="info-title tit-type-5 subtitle-mobile-type-1">
-                                    不斷學習
-                                </h4>
-                                <p class="info-text body-type-1 body-mobile-type-2">
-                                    工作上要解決的問題有很多，必須保持不斷學習，讓自己進步成長，將賺取到的學習經驗使用在工作上，解決工作上的問題，除此之外也讓自己獲得很多的成就感。
-                                </p>
-                            </div>
+                            <h3 class="section-title-short text-left tit-type-3">
+                                My values
+                                <br>
+                                我的價值觀
+                            </h3>
                         </div>
-                    </section>
-                </div>
+                        <!-- 內容 -->
+                        <div class="introduction-part-info fade-in-animate">
+                            <h4 class="info-title tit-type-5 subtitle-mobile-type-1">
+                                團隊合作
+                            </h4>
+                            <p class="info-text body-type-1 body-mobile-type-2">
+                                我重視團隊的合作，在與不同的工作者協作的時候，保持開放的心去傾聽、理解、溝通，互相協調之下尋找到最好的答案，一個成功的作品是來自一整個團隊努力所換來的成果。
+                            </p>
+                            <!-- 分隔線 -->
+                            <div class="divider-line">
+                                <div class="line"></div>
+                            </div>
+                            <h4 class="info-title tit-type-5 subtitle-mobile-type-1">
+                                不斷學習
+                            </h4>
+                            <p class="info-text body-type-1 body-mobile-type-2">
+                                工作上要解決的問題有很多，必須保持不斷學習，讓自己進步成長，將賺取到的學習經驗使用在工作上，解決工作上的問題，除此之外也讓自己獲得很多的成就感。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
 
-            </main>
+        </main>
 
-            <!-- footer引入 -->
-            <div class="footerpage"></div>
-        </div>
-
-        <!-- go top button -->
-        <button id="goTopButton" class="go-top-button">
-            <img class="icon" src="../src/public/scss/images/icon/go-top-button.svg" alt="">
-        </button>
+        <!-- footer引入 -->
+        <div class="footerpage"></div>
     </div>
+
+    <!-- go top button -->
+    <button id="goTopButton" class="go-top-button">
+        <img class="icon" src="../src/public/scss/images/icon/go-top-button.svg" alt="">
+    </button>
 
 
     <!-- JQuery引入 -->
@@ -367,13 +358,6 @@
     <script src="../src/JS/go-top-button.js"></script>
 
     <script>
-        // loading
-        window.addEventListener("load", function () {
-            document.getElementById("loading").style.display = "none";
-            document.getElementById("content").style.display = "block";
-        });
-
-
         // GSAP動畫js設定
         gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
