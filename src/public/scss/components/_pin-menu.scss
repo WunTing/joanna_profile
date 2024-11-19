@@ -1,8 +1,6 @@
 // pin側選單
 
 .pin-menu-item {
-    height: 400px;
-
     .pin-menu {
         list-style-type: none;
         padding: 0;
@@ -26,8 +24,6 @@
 
 @media screen and (max-width: 767px) {
     .pin-menu-item {
-        height: auto;
-
         .pin-menu {
             display: flex;
             white-space: nowrap;
