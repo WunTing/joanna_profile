@@ -827,9 +827,6 @@ button {
     padding-bottom: 8px;
   }
 }
-.pin-menu-item {
-  height: 400px;
-}
 .pin-menu-item .pin-menu {
   list-style-type: none;
   padding: 0;
@@ -848,9 +845,6 @@ button {
 }
 
 @media screen and (max-width: 767px) {
-  .pin-menu-item {
-    height: auto;
-  }
   .pin-menu-item .pin-menu {
     display: flex;
     white-space: nowrap;
