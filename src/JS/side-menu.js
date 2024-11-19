@@ -43,7 +43,7 @@ $(document).ready(function () {
             var containerBottom = containerOffset + containerHeight;
             var scrollPosition = $(document).scrollTop();
 
-            var offset = $(window).width() <= 767 ? 110 : 100; // 在767以下改為110
+            var offset = $(window).width() <= 767 ? 110 : 120; // 在767以下改為110
 
             if (scrollPosition < containerBottom - offset && scrollPosition >= containerOffset - offset) {
                 $(this).addClass('active');
