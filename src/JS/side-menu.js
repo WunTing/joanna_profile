@@ -29,7 +29,7 @@ $(document).ready(function () {
         e.preventDefault(); // 避免預設行為
 
         var targetSection = $($(this).attr('href')); // 獲取目標段落
-        var offset = $(window).width() <= 767 ? 100 : 80; // 在767以下改為100
+        var offset = $(window).width() <= 767 ? 130 : 80; // 在767以下改為130
         $('html, body').animate({
             scrollTop: targetSection.offset().top - offset // 調整為使段落位於頂部，並加入 offset
         }, 500); // 設置滾動時間
@@ -43,7 +43,7 @@ $(document).ready(function () {
             var containerBottom = containerOffset + containerHeight;
             var scrollPosition = $(document).scrollTop();
 
-            var offset = $(window).width() <= 767 ? 110 : 120; // 在767以下改為110
+            var offset = $(window).width() <= 767 ? 130 : 120; // 在767以下改為130
 
             if (scrollPosition < containerBottom - offset && scrollPosition >= containerOffset - offset) {
                 $(this).addClass('active');
