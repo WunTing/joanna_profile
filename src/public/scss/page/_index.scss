@@ -67,6 +67,17 @@
     }
 }
 
+@media screen and (max-width: 1399px) {
+
+    // 開場文字
+    .index-content {
+        .opening-font {
+            padding: 20vh 8%;
+        }
+    }
+
+}
+
 @media screen and (max-width: 767px) {
     .index-content {
 
