@@ -252,6 +252,8 @@ button {
   overflow: hidden;
   position: relative;
   z-index: 0;
+  text-decoration: none;
+  display: inline-block;
 }
 .btn-base::before, .btn-default-sm::before, .btn-default-md::before, .btn-default-lg::before {
   content: "";
