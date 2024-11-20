@@ -757,7 +757,7 @@ button {
   padding-bottom: 16px;
 }
 
-@media screen and (max-width: 1399px) {
+@media screen and (max-width: 1500px) {
   .index-content .opening-font {
     padding: 20vh 8%;
   }
