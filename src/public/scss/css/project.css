@@ -207,13 +207,13 @@ button {
   .body-mobile-type-1 {
     font-size: 14px;
     font-weight: bold;
-    line-height: 170%;
+    line-height: 180%;
     letter-spacing: 0.2px;
   }
   .body-mobile-type-2 {
     font-size: 14px;
     font-weight: normal;
-    line-height: 170%;
+    line-height: 180%;
     letter-spacing: 0.2px;
   }
   .btn-lg {
@@ -1072,6 +1072,9 @@ button {
   }
   .product .product-banner-mask {
     height: 360px;
+  }
+  .product .product-banner-mask .product-top-tit h1 {
+    margin-bottom: 8px;
   }
   .product-content-card .content-info-block {
     flex-direction: column;
