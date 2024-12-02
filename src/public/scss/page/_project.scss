@@ -94,6 +94,14 @@
 
         .product-banner-mask {
             height: 360px;
+
+            // banner標題
+            .product-top-tit {
+
+                h1 {
+                    margin-bottom: 8px;
+                }
+            }
         }
     }
 
