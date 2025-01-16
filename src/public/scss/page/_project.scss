@@ -78,10 +78,6 @@
         max-width: 600px;
         display: block;
         margin: auto;
-
-        .btn-lg {
-            justify-content: center;
-        }
     }
 }
 
@@ -129,6 +125,11 @@
 
         .slider-tit {
             margin-bottom: 24px;
+        }
+
+        // 回到首頁按鈕
+        .go-back {
+            width: auto;
         }
     }
 }
