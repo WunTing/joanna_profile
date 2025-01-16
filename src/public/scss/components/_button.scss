@@ -89,6 +89,14 @@
     }
 }
 
+@media screen and (max-width: 767px) {
+
+    // default按鈕基礎共用
+    .btn-base {
+        display: block;
+    }
+}
+
 // 以下按鈕個別設定---------------------------------------------
 
 // lg按鈕
@@ -167,7 +175,7 @@
 .btn-default-sm {
     .btn-lg {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
 
         .icon {
             width: 24px;
